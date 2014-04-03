@@ -1,0 +1,150 @@
+
+
+/* Links and Headers
+======================================================= */
+a {
+	color:$link-color;
+	@include ease;
+	&:focus, &:hover, &:active {outline: 0;}
+	&:hover {color:$link-hover-color;}
+}
+
+h1, h2, h3, h4, h5 {
+	margin-bottom:0.35em;
+	color:$headline-color;
+	//letter-spacing:0.25em;
+	text-transform:uppercase;
+	@include font-os(700);
+}
+
+h1 {font-size:4em;}
+h2 {font-size:3em;}
+h3 {font-size:2.5em;}
+h4 {font-size:2em;}
+h5 {font-size:1.5em;}
+
+
+
+
+/* Main Body Styles
+======================================================= */
+body {
+	font-size:62.5%;
+	color:$body-copy-color;
+	@include font-os(400);
+}
+
+
+
+/* Home Page
+======================================================= */
+@import "_homepage.scss";
+
+
+
+
+/* Resume Page
+======================================================= */
+body#hireme {
+	background:#eee;
+	.content-wrapper {
+		width:60%;
+		margin:20px auto;
+		padding:20px;
+		background:white;
+	}
+	section { // For Experience, Education and Skills
+		margin-bottom:50px;
+		&#intro { // Intro Section Only
+			h1 {}
+			h2 {}
+			.content {}
+		}
+		article { // For Individual Entries
+			margin-bottom: 30px;
+			header { // For Entry Titles, Locations, etc
+				position:relative;
+				h1 {font-size:2em;}
+				h2 {font-size:1.3em;}
+				.meta {
+					position:absolute;
+					top:0;
+					right:0;
+					text-align: right;
+					.date {margin-bottom:5px;}
+					.location {}
+				}
+			}
+			.content {}
+		}
+		ul {
+			display: inline-block;
+			width:49%;
+			margin-right:2%;
+			//float:left;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+/* Footer
+======================================================= */
+footer {
+	width:100%;
+	padding:15px 0;
+	background:#333;
+	background:rgb(57,57,57);
+	color:#ccc;
+	text-align:center;
+	font-size:0.85em;
+	letter-spacing:0.2em;
+	text-transform:uppercase;
+	//@include lato-4;
+}
+
+
+
+
+/* Extras
+======================================================= */
+
+// Scroll to Top
+.go-top {
+	display: none;
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+	padding: 1em 1em 0.75em 1em;
+	background-color: rgba(158,178,192,0.4);
+
+	font-size: 12px;
+	color: white;
+	text-decoration: none;
+}
+
+
+// FIrst & Last Overrides
+.first {margin-left:0 !important;}
+.last {margin-right:0 !important;}
+
+
+
+
+
+/* Selection Colors
+======================================================= */
+::selection {
+	background:$highlight-bkgd-color;
+	color:$highlight-color;
+}
+
+::-moz-selection {
+	background:$highlight-bkgd-color;
+	color:$highlight-color;
+}

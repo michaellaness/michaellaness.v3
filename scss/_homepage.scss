@@ -1,0 +1,190 @@
+body#home {
+	padding:$site-padding;
+	line-height:2px;
+	a {
+		text-decoration: none;
+		color:darken($grey, 16%);
+	}
+	.button {
+		z-index:9999;
+		right:15px;
+		top:15px;
+		position:absolute;
+		a {
+			@include ease(333ms);
+			svg {
+				height:50px;
+				width:50px;
+				.background {
+					fill:$yellow;
+					opacity: 0;
+					@include ease;
+				}
+				.icon {fill:$grey;}
+				&:hover {
+					.background {
+						fill:$yellow;
+						opacity: 1;
+					}
+					.icon {fill: white;}
+				}
+			}
+		}
+	}
+	li {
+		position:relative;
+		width: 94%;
+		margin:auto;
+		list-style: none;
+		@include ease;
+		&:first-child {
+			&:hover {
+				p {
+					opacity:1;
+					margin-left:30%;
+				}
+			}
+		}
+		&:first-child, &:nth-child(2), &:nth-child(3) {
+			padding:30px 40px;
+	}
+		// Me
+		&:first-child {
+			&:hover, &.active {background-color:$red-2;}
+		}
+		// Work
+		&:nth-child(2) {
+			span {margin-left:0%;}
+			&:hover, &.active {
+				background-color:$main;
+				span {margin-left:2%;}
+			}
+		}
+		// Play
+		&:nth-child(3) {
+			span {margin-left: -2%;}
+			&:hover, &.active {
+				background-color:$yellow;
+				span {margin-left:0;}
+			}
+		}
+		p {
+			@include pn;
+			color:darken($red-2, 25%);
+			font-weight: 300;
+			font-style: italic;
+			font-size: 21px;
+			opacity: 0;
+			text-align: left;
+			line-height: 24px;
+			position:absolute;
+			letter-spacing: .02em;
+			bottom:28px;
+			margin-left:25%;
+			width: 55%;
+			@include ease;
+		}
+		// Both SVG Images
+		svg.work,
+		svg.play,
+		svg.me {
+			fill:$grey;
+			height:0%;
+			@include ease;
+		}
+		// Work Letters
+		svg.work {width:$word-width + 15%;}
+		// Play Letters
+		svg.play {width:$word-width;}
+		// Me Letters
+		svg.me {width:$word-width - 22%;}
+		// Social
+		span {
+			position:absolute;
+			bottom:35px;
+  			@include ease;
+			a {
+				svg {
+					width:55px;
+					height: 55px;
+					opacity: 0;
+					margin-left:10px;
+			  		.background,
+			  		.icon,
+			  		.circle {@include ease;}
+					.background {opacity: 0;}
+					// Behance
+					&.behance {
+						.background {fill:$main;}
+						.icon {fill:darken($main, 16%);}
+						&:hover {
+							.background {fill:lighten($main, 20%);}
+							.icon {fill:$main;}
+						}
+					}
+					// Linkedin
+					&.linkedin {
+						.background {fill:$main;}
+						.icon {fill:darken($main, 16%);}
+						&:hover {
+							.background {fill:lighten($main, 20%);}
+							.icon {fill:$main;}
+						}
+					}
+					// Codepen
+					&.codepen {
+						.background {fill:$yellow;}
+						.circle {fill:darken($yellow, 16%);}
+						.icon {fill:darken($yellow, 16%);}
+						&:hover {
+							.background {fill:lighten($yellow, 20%);}
+							.icon {fill:$yellow;}
+							.circle {fill:$yellow;}
+						}
+					}
+					// Tumblr
+					&.tumblr {
+						.background {fill:$yellow;}
+						.icon {fill:darken($yellow, 16%);}
+						&:hover {
+							.background {fill:lighten($yellow, 20%);}
+							.icon {fill:$yellow;}
+						}
+					}
+					// Instagram
+					&.instagram {
+						.background {	fill:$yellow;}
+						.icon {fill:darken($yellow, 16%);}
+						&:hover {
+							.background {fill:lighten($yellow, 20%);}
+							.icon {fill:$yellow;}
+						}
+					}
+					// Twitter
+				&.twitter {
+					.background {fill:$yellow;}
+					.icon {fill:darken($yellow, 16%);}
+					&:hover {
+						.background {fill:lighten($yellow, 20%);}
+						.icon {fill:$yellow;}
+					}
+				}
+			}
+		}
+	}
+		&:hover,
+		&.active {
+			span {
+				opacity:1;
+				a {
+					svg {
+						opacity: 1;
+						&:hover {
+							.background {opacity: 1;}
+						}
+					}
+				}
+			}
+		}
+	}
+}

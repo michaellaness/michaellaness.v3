@@ -1,0 +1,435 @@
+/* #Reset
+================================================================================================= */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Media - Fluid Images - Video
+======================================================= */
+figure {
+  margin: 0;
+}
+
+img, object, embed, video {
+  max-width: 100%;
+  _width: 100%;
+}
+
+/* Fluid images */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* Improve IE's resizing of images */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Correct IE9 overflow */
+img {
+  height: auto;
+}
+
+/* Colors
+================================================================================================= */
+/* Sizes
+================================================================================================= */
+/* Transition Times
+================================================================================================= */
+/* Open Sans
+================================================================================================= */
+/* Proxima Nova
+================================================================================================= */
+/* Links and Headers
+======================================================= */
+a {
+  color: blue;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+a:focus, a:hover, a:active {
+  outline: 0;
+}
+a:hover {
+  color: purple;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0.35em;
+  color: #444444;
+  text-transform: uppercase;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+/* Main Body Styles
+======================================================= */
+body {
+  font-size: 62.5%;
+  color: #444444;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Home Page
+======================================================= */
+body#home {
+  padding: 15px;
+  line-height: 2px;
+}
+body#home a {
+  text-decoration: none;
+  color: #ccc8c8;
+}
+body#home .button {
+  z-index: 9999;
+  right: 15px;
+  top: 15px;
+  position: absolute;
+}
+body#home .button a {
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home .button a svg {
+  height: 50px;
+  width: 50px;
+}
+body#home .button a svg .background {
+  fill: #fed544;
+  opacity: 0;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home .button a svg .icon {
+  fill: #f3f2f2;
+}
+body#home .button a svg:hover .background {
+  fill: #fed544;
+  opacity: 1;
+}
+body#home .button a svg:hover .icon {
+  fill: white;
+}
+body#home li {
+  position: relative;
+  width: 94%;
+  margin: auto;
+  list-style: none;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home li:first-child:hover p {
+  opacity: 1;
+  margin-left: 30%;
+}
+body#home li:first-child, body#home li:nth-child(2), body#home li:nth-child(3) {
+  padding: 30px 40px;
+}
+body#home li:first-child:hover, body#home li:first-child.active {
+  background-color: tomato;
+}
+body#home li:nth-child(2) span {
+  margin-left: 0%;
+}
+body#home li:nth-child(2):hover, body#home li:nth-child(2).active {
+  background-color: turquoise;
+}
+body#home li:nth-child(2):hover span, body#home li:nth-child(2).active span {
+  margin-left: 2%;
+}
+body#home li:nth-child(3) span {
+  margin-left: -2%;
+}
+body#home li:nth-child(3):hover, body#home li:nth-child(3).active {
+  background-color: #fed544;
+}
+body#home li:nth-child(3):hover span, body#home li:nth-child(3).active span {
+  margin-left: 0;
+}
+body#home li p {
+  font-family: 'proxima_nova_rgregular';
+  color: #c61e00;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 21px;
+  opacity: 0;
+  text-align: left;
+  line-height: 24px;
+  position: absolute;
+  letter-spacing: .02em;
+  bottom: 28px;
+  margin-left: 25%;
+  width: 55%;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home li svg.work,
+body#home li svg.play,
+body#home li svg.me {
+  fill: #f3f2f2;
+  height: 0%;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home li svg.work {
+  width: 66.5%;
+}
+body#home li svg.play {
+  width: 51.5%;
+}
+body#home li svg.me {
+  width: 29.5%;
+}
+body#home li span {
+  position: absolute;
+  bottom: 35px;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home li span a svg {
+  width: 55px;
+  height: 55px;
+  opacity: 0;
+  margin-left: 10px;
+}
+body#home li span a svg .background,
+body#home li span a svg .icon,
+body#home li span a svg .circle {
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home li span a svg .background {
+  opacity: 0;
+}
+body#home li span a svg.behance .background {
+  fill: turquoise;
+}
+body#home li span a svg.behance .icon {
+  fill: #1db2a3;
+}
+body#home li span a svg.behance:hover .background {
+  fill: #98eee6;
+}
+body#home li span a svg.behance:hover .icon {
+  fill: turquoise;
+}
+body#home li span a svg.linkedin .background {
+  fill: turquoise;
+}
+body#home li span a svg.linkedin .icon {
+  fill: #1db2a3;
+}
+body#home li span a svg.linkedin:hover .background {
+  fill: #98eee6;
+}
+body#home li span a svg.linkedin:hover .icon {
+  fill: turquoise;
+}
+body#home li span a svg.codepen .background {
+  fill: #fed544;
+}
+body#home li span a svg.codepen .circle {
+  fill: #efbb01;
+}
+body#home li span a svg.codepen .icon {
+  fill: #efbb01;
+}
+body#home li span a svg.codepen:hover .background {
+  fill: #ffeca9;
+}
+body#home li span a svg.codepen:hover .icon {
+  fill: #fed544;
+}
+body#home li span a svg.codepen:hover .circle {
+  fill: #fed544;
+}
+body#home li span a svg.tumblr .background {
+  fill: #fed544;
+}
+body#home li span a svg.tumblr .icon {
+  fill: #efbb01;
+}
+body#home li span a svg.tumblr:hover .background {
+  fill: #ffeca9;
+}
+body#home li span a svg.tumblr:hover .icon {
+  fill: #fed544;
+}
+body#home li span a svg.instagram .background {
+  fill: #fed544;
+}
+body#home li span a svg.instagram .icon {
+  fill: #efbb01;
+}
+body#home li span a svg.instagram:hover .background {
+  fill: #ffeca9;
+}
+body#home li span a svg.instagram:hover .icon {
+  fill: #fed544;
+}
+body#home li span a svg.twitter .background {
+  fill: #fed544;
+}
+body#home li span a svg.twitter .icon {
+  fill: #efbb01;
+}
+body#home li span a svg.twitter:hover .background {
+  fill: #ffeca9;
+}
+body#home li span a svg.twitter:hover .icon {
+  fill: #fed544;
+}
+body#home li:hover span, body#home li.active span {
+  opacity: 1;
+}
+body#home li:hover span a svg, body#home li.active span a svg {
+  opacity: 1;
+}
+body#home li:hover span a svg:hover .background, body#home li.active span a svg:hover .background {
+  opacity: 1;
+}
+
+/* Resume Page
+======================================================= */
+body#hireme {
+  background: #eee;
+}
+body#hireme .content-wrapper {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+}
+body#hireme section {
+  margin-bottom: 50px;
+}
+body#hireme section article {
+  margin-bottom: 30px;
+}
+body#hireme section article header {
+  position: relative;
+}
+body#hireme section article header h1 {
+  font-size: 2em;
+}
+body#hireme section article header h2 {
+  font-size: 1.3em;
+}
+body#hireme section article header .meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+body#hireme section article header .meta .date {
+  margin-bottom: 5px;
+}
+body#hireme section ul {
+  display: inline-block;
+  width: 49%;
+  margin-right: 2%;
+}
+
+/* Footer
+======================================================= */
+footer {
+  width: 100%;
+  padding: 15px 0;
+  background: #333;
+  background: #393939;
+  color: #ccc;
+  text-align: center;
+  font-size: 0.85em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* Extras
+======================================================= */
+.go-top {
+  display: none;
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  padding: 1em 1em 0.75em 1em;
+  background-color: rgba(158, 178, 192, 0.4);
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+}
+
+.first {
+  margin-left: 0 !important;
+}
+
+.last {
+  margin-right: 0 !important;
+}
+
+/* Selection Colors
+======================================================= */
+::-moz-selection {
+  background: tomato;
+  color: white;
+}
+::selection {
+  background: tomato;
+  color: white;
+}
+
+::-moz-selection {
+  background: tomato;
+  color: white;
+}

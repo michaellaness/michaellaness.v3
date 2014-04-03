@@ -1,0 +1,33 @@
+
+/* Colors
+================================================================================================= */
+
+$red-2:tomato;
+$main:turquoise;
+$grey:#f3f2f2;
+$yellow:#fed544;
+
+
+$headline-color:#444;
+$body-copy-color:#444;
+
+$link-color:blue;
+$link-hover-color:purple;
+
+// Highlight Colors
+$highlight-color:white;
+$highlight-bkgd-color:$red-2;
+
+
+
+
+/* Sizes
+================================================================================================= */
+
+$word-width:51.5%;
+$site-padding:15px;
+
+@mixin page-width {
+	width:78%;
+	max-width:1250px;
+}

@@ -1,0 +1,24 @@
+
+/* Open Sans
+================================================================================================= */
+@mixin font-os($weight:300, $style:normal) {
+	font-family: 'Open Sans', helvetica, sans-serif;
+	font-weight:$weight;
+	font-style:$style;
+}
+
+
+
+/* Proxima Nova
+================================================================================================= */
+@mixin pn-light {font-family:'proxima_novalight';}
+@mixin pn-light-italic {font-family: 'proxima_novalight_italic';}
+@mixin pn {font-family: 'proxima_nova_rgregular';}
+@mixin pn-semibold {font-family: 'proxima_novasemibold';}
+@mixin pn-bold {font-family: 'proxima_nova_rgbold';}
+@mixin pn-extrabold {font-family: 'proxima_novaextrabold';}
+@mixin pn-cn {font-family: 'proxima_nova_cn_rgregular';}
+
+
+
+
