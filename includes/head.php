@@ -17,6 +17,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/logo.80x80.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/logo.128x128.png">	-->
 
+	<link href='fonts/genericons/genericons.css' rel="stylesheet" type='text/css'>
 	<link href='fonts/Proxima-Nova/stylesheet.css' rel="stylesheet" type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
 

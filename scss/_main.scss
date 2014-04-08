@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5 {
 	color:$headline-color;
 	//letter-spacing:0.25em;
 	text-transform:uppercase;
-	@include font-os(700);
+	@include font-nov(bold);
 }
 
 h1 {font-size:4em;}
@@ -36,6 +36,7 @@ body {
 
 
 
+
 /* Home Page
 ======================================================= */
 @import "_homepage.scss";
@@ -50,38 +51,134 @@ body#hireme {
 	.content-wrapper {
 		width:60%;
 		margin:20px auto;
-		padding:20px;
+		padding:30px 40px;
 		background:white;
+		border-top:10px solid $resume-color-1;
 	}
 	section { // For Experience, Education and Skills
 		margin-bottom:50px;
+		padding-right:20px;
+		&#skills {
+			padding-bottom:65px;
+			margin-bottom: 28px;
+			border-bottom:2px dotted darken($grey,7%);
+		}
 		&#intro { // Intro Section Only
-			h1 {}
-			h2 {}
-			.content {}
+			float: left;
+			padding-bottom:30px;
+			border-bottom:2px dotted darken($grey,7%);
+			img {
+				width:200px;
+				float:left;
+				margin-right: 30px;
+			}
+			h1 {
+				font-size:2.85em;
+				letter-spacing: 0.09em;
+				margin-top: 44px;
+			}
+			h2 {
+				font-size:1.5em;
+				@include font-pn(light-italic);
+				letter-spacing: 0.09em;
+			}
+			.content {
+				font-size: 1.4em;
+				margin-top:20px;
+				line-height: 1.5em;
+			}
+		}
+		h2.section-header {
+			$spacer:3%;
+			$padding:2%;
+			$width:24% - $spacer - $padding;
+			width:$width;
+			margin-right:$spacer;
+			padding-right:$padding;
+			border-right:4px solid $grey;
+			display: inline-block;
+			float:left;
+			font-size: 1.8em;
+			text-align:right;
+			color:$resume-color-1;//lighten($headline-color,25%);
+			@include font-nov(demibold);
 		}
 		article { // For Individual Entries
 			margin-bottom: 30px;
+			width:75%;
+			display: inline-block;
+			float:right;
 			header { // For Entry Titles, Locations, etc
 				position:relative;
-				h1 {font-size:2em;}
-				h2 {font-size:1.3em;}
+				h1 {
+					font-size:2em;
+					margin-bottom: 12px;
+					&.education {
+						font-size: 1.6em;
+					}
+				}
+				h2 {
+					font-size:1.5em;
+					text-transform: none;
+					margin-bottom: 10px;
+					color:$resume-color-1;
+					@include font-os(300, italic);
+}
 				.meta {
 					position:absolute;
 					top:0;
 					right:0;
 					text-align: right;
+					font-size: 0.8em;
+					@include font-nov(demibold);
 					.date {margin-bottom:5px;}
 					.location {}
 				}
 			}
-			.content {}
+			.content {
+				font-size: 1.4em;
+				width:70%;
+				line-height: 1.5em;
+				color:#999;
+			}
 		}
-		ul {
+		ul.skill-list {
 			display: inline-block;
 			width:49%;
 			margin-right:2%;
-			//float:left;
+			float:left;
+			li {
+				list-style: none;
+				margin-bottom: 25px;
+				font-size: 1.3em;
+				color:#999;
+				@include font-nov(medium);
+			}
+		}
+		&#contact {
+			margin-bottom: 0;
+			padding-right:0;
+			ul.contact-list {
+				//width: 100%;
+				li {
+					width:(100% / 3);
+					margin:0;
+					display: inline-block;
+					float: left;
+					text-align:center;
+					font-size: 1.4em;
+					a{
+						list-style: none;
+						color: $resume-color-1;
+						border-bottom:1px solid white;
+						text-decoration: none;
+						@include ease;
+					}
+					&:first-child {text-align:left;}
+					&:last-child {text-align:right;}
+					&:hover {a {border-color:$resume-color-1;}}
+				}
+			}
 		}
 	}
 }
@@ -105,7 +202,6 @@ footer {
 	font-size:0.85em;
 	letter-spacing:0.2em;
 	text-transform:uppercase;
-	//@include lato-4;
 }
 
 
@@ -133,8 +229,19 @@ footer {
 .first {margin-left:0 !important;}
 .last {margin-right:0 !important;}
 
-
-
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
 
 
 /* Selection Colors

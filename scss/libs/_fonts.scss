@@ -5,20 +5,35 @@
 	font-family: 'Open Sans', helvetica, sans-serif;
 	font-weight:$weight;
 	font-style:$style;
+	letter-spacing:0.03em;
 }
 
 
 
 /* Proxima Nova
 ================================================================================================= */
-@mixin pn-light {font-family:'proxima_novalight';}
-@mixin pn-light-italic {font-family: 'proxima_novalight_italic';}
-@mixin pn {font-family: 'proxima_nova_rgregular';}
-@mixin pn-semibold {font-family: 'proxima_novasemibold';}
-@mixin pn-bold {font-family: 'proxima_nova_rgbold';}
-@mixin pn-extrabold {font-family: 'proxima_novaextrabold';}
-@mixin pn-cn {font-family: 'proxima_nova_cn_rgregular';}
+@mixin font-pn($weight) {
+	@if $weight == 'light' {font-family:'proxima_novalight';}
+	@else if $weight == 'light-italic' {font-family: 'proxima_novalight_italic';}
+	@else if $weight == 'regular' {font-family: 'proxima_nova_rgregular';}
+	@else if $weight == 'semibold' {font-family: 'proxima_novasemibold';}
+	@else if $weight == 'bold' {font-family: 'proxima_nova_rgbold';}
+	@else if $weight == 'extrabold' {font-family: 'proxima_novaextrabold';}
+	@else if $weight == 'condensed' {font-family: 'proxima_nova_cn_rgregular';}
+}
 
 
+/* Novecento
+================================================================================================= */
+@import "fonts/_novecento";
 
+@mixin font-nov($weight) {
+   @if $weight == 'bold' {font-family: 'Novecentowide-Bold';}
+   @else if $weight == 'light' {font-family: 'Novecentowide-Light';}
+   @else if $weight == 'demibold' {font-family: 'Novecentowide-DemiBold';}
+   @else if $weight == 'book' {font-family: 'Novecentowide-Book';}
+   @else if $weight == 'normal' {font-family: 'Novecentowide-Normal';}
+   @else if $weight == 'medium' {font-family: 'Novecentowide-Medium';}
+   letter-spacing: 0.09em;
+}
 

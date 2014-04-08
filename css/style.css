@@ -69,6 +69,44 @@ img {
 ================================================================================================= */
 /* Proxima Nova
 ================================================================================================= */
+/* Novecento
+================================================================================================= */
+@font-face {
+  font-family: 'Novecentowide-Bold';
+  src: url("/fonts/novecento/25DFFC_0_0.eot");
+  src: url("/fonts/novecento/25DFFC_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_0_0.woff") format("woff"), url("/fonts/novecento/25DFFC_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Novecentowide-Light';
+  src: url("/fonts/novecento/25DFFC_1_0.eot");
+  src: url("/fonts/novecento/25DFFC_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_1_0.woff") format("woff"), url("/fonts/novecento/25DFFC_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Novecentowide-DemiBold';
+  src: url("/fonts/novecento/25DFFC_2_0.eot");
+  src: url("/fonts/novecento/25DFFC_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_2_0.woff") format("woff"), url("/fonts/novecento/25DFFC_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Novecentowide-Book';
+  src: url("/fonts/novecento/25DFFC_3_0.eot");
+  src: url("/fonts/novecento/25DFFC_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_3_0.woff") format("woff"), url("/fonts/novecento/25DFFC_3_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Novecentowide-Normal';
+  src: url("/fonts/novecento/25DFFC_4_0.eot");
+  src: url("/fonts/novecento/25DFFC_4_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_4_0.woff") format("woff"), url("/fonts/novecento/25DFFC_4_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Novecentowide-Medium';
+  src: url("/fonts/novecento/25DFFC_5_0.eot");
+  src: url("/fonts/novecento/25DFFC_5_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_5_0.woff") format("woff"), url("/fonts/novecento/25DFFC_5_0.ttf") format("truetype");
+}
+
 /* Links and Headers
 ======================================================= */
 a {
@@ -87,9 +125,8 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 0.35em;
   color: #444444;
   text-transform: uppercase;
-  font-family: 'Open Sans', helvetica, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: 'Novecentowide-Bold';
+  letter-spacing: 0.09em;
 }
 
 h1 {
@@ -120,6 +157,7 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 /* Home Page
@@ -349,37 +387,143 @@ body#hireme {
 body#hireme .content-wrapper {
   width: 60%;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px 40px;
   background: white;
+  border-top: 10px solid #6088a0;
 }
 body#hireme section {
   margin-bottom: 50px;
+  padding-right: 20px;
+}
+body#hireme section#skills {
+  padding-bottom: 65px;
+  margin-bottom: 28px;
+  border-bottom: 2px dotted #e2dfdf;
+}
+body#hireme section#intro {
+  float: left;
+  padding-bottom: 30px;
+  border-bottom: 2px dotted #e2dfdf;
+}
+body#hireme section#intro img {
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+}
+body#hireme section#intro h1 {
+  font-size: 2.85em;
+  letter-spacing: 0.09em;
+  margin-top: 44px;
+}
+body#hireme section#intro h2 {
+  font-size: 1.5em;
+  font-family: 'proxima_novalight_italic';
+  letter-spacing: 0.09em;
+}
+body#hireme section#intro .content {
+  font-size: 1.4em;
+  margin-top: 20px;
+  line-height: 1.5em;
+}
+body#hireme section h2.section-header {
+  width: 19%;
+  margin-right: 3%;
+  padding-right: 2%;
+  border-right: 4px solid #f3f2f2;
+  display: inline-block;
+  float: left;
+  font-size: 1.8em;
+  text-align: right;
+  color: #6088a0;
+  font-family: 'Novecentowide-DemiBold';
+  letter-spacing: 0.09em;
 }
 body#hireme section article {
   margin-bottom: 30px;
+  width: 75%;
+  display: inline-block;
+  float: right;
 }
 body#hireme section article header {
   position: relative;
 }
 body#hireme section article header h1 {
   font-size: 2em;
+  margin-bottom: 12px;
+}
+body#hireme section article header h1.education {
+  font-size: 1.6em;
 }
 body#hireme section article header h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  text-transform: none;
+  margin-bottom: 10px;
+  color: #6088a0;
+  font-family: 'Open Sans', helvetica, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.03em;
 }
 body#hireme section article header .meta {
   position: absolute;
   top: 0;
   right: 0;
   text-align: right;
+  font-size: 0.8em;
+  font-family: 'Novecentowide-DemiBold';
+  letter-spacing: 0.09em;
 }
 body#hireme section article header .meta .date {
   margin-bottom: 5px;
 }
-body#hireme section ul {
+body#hireme section article .content {
+  font-size: 1.4em;
+  width: 70%;
+  line-height: 1.5em;
+  color: #999;
+}
+body#hireme section ul.skill-list {
   display: inline-block;
   width: 49%;
   margin-right: 2%;
+  float: left;
+}
+body#hireme section ul.skill-list li {
+  list-style: none;
+  margin-bottom: 25px;
+  font-size: 1.3em;
+  color: #999;
+  font-family: 'Novecentowide-Medium';
+  letter-spacing: 0.09em;
+}
+body#hireme section#contact {
+  margin-bottom: 0;
+  padding-right: 0;
+}
+body#hireme section#contact ul.contact-list li {
+  width: 33.33333%;
+  margin: 0;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  font-size: 1.4em;
+}
+body#hireme section#contact ul.contact-list li a {
+  list-style: none;
+  color: #6088a0;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#hireme section#contact ul.contact-list li:first-child {
+  text-align: left;
+}
+body#hireme section#contact ul.contact-list li:last-child {
+  text-align: right;
+}
+body#hireme section#contact ul.contact-list li:hover a {
+  border-color: #6088a0;
 }
 
 /* Footer
@@ -418,6 +562,29 @@ footer {
   margin-right: 0 !important;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
 /* Selection Colors
 ======================================================= */
 ::-moz-selection {

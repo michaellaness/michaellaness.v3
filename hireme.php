@@ -6,14 +6,16 @@
 <div class="content-wrapper">
 
 
-<section id="intro">
+<section id="intro" class="clearfix">
+	<img src="/images/me.jpg">
 	<h1>MICHAELLA DIRKES</h1>
 	<h2>Web + UX Designer</h2>
 	<div class="content">3+ years of experience designing thoughtful and intuitive web experiences that connect both communities and brands. BFA in Graphic Design and also write HTML & CSS/SCSS fluently, looking to join a strong team.</div>
 </section>
 
-<section>
-	<h2>Experience</h2>
+
+<section class="clearfix">
+	<h2 class="section-header">Experience</h2>
 
 	<article>
 		<header>
@@ -75,15 +77,14 @@
 		</header>
 		<div class="content">Assisted in the planning, design, launch & QA of a 60+ project portfolio redesign for the web. I also successfully updated their branding and presence across the web.</div>
 	</article>
-
 </section>
 
-<section>
-	<h2>Education</h2>
+<section class="clearfix">
+	<h2 class="section-header">Education</h2>
 
 	<article>
 		<header>
-			<h1>Rocky Mountain College of Art and Design</h1>
+			<h1 class="education">Rocky Mountain College of Art & Design</h1>
 			<h2>BFA Graphic Design</h2>
 			<div class="meta">
 				<div class="date">2011 – 2012</div>
@@ -94,7 +95,7 @@
 
 	<article>
 		<header>
-			<h1>Savannah College of Art and Design</h1>
+			<h1 class="education">Savannah College of Art & Design</h1>
 			<h2>Graphic Design</h2>
 			<div class="meta">
 				<div class="date">2008 – 2010</div>
@@ -105,21 +106,30 @@
 
 </section>
 
-<section>
-	<h2>Skills</h2>
-	<ul>
-		<li>WEB LAYOUT</li>
-		<li>CREATIVE PROBLEM SOLVING</li>
-		<li>BRANDING & IDENTITY</li>
-		<li>CREATIVE COPYWRITING</li>
-		<li>SOCIAL MEDIA</li>
-	</ul>
-	<ul class="last">
-		<li>RESPONSIVE DESIGN</li>
-		<li>HTML/CSS/SASS</li>
-		<li>WORDPRESS</li>
-		<li>CREATIVE SUITE</li>
-		<li>PHOTOGRAPHY</li>
+<section id="skills" class="clearfix">
+	<h2 class="section-header">Skills</h2>
+	<article>
+		<ul class="skill-list">
+			<li>WEB LAYOUT</li>
+			<li>CREATIVE PROBLEM SOLVING</li>
+			<li>BRANDING & IDENTITY</li>
+			<li>CREATIVE COPYWRITING</li>
+			<li>SOCIAL MEDIA</li>
+		</ul>
+		<ul class="skill-list last">
+			<li>RESPONSIVE DESIGN</li>
+			<li>HTML/CSS/SASS</li>
+			<li>WORDPRESS</li>
+			<li>CREATIVE SUITE</li>
+			<li>PHOTOGRAPHY</li>
+		</ul>
+	</article>
+</section>
+<section id="contact">
+	<ul class="contact-list clearfix">
+		<li><a href="tel:3035059360">303-505-9360</a></li>
+		<li><a href="mailto:m@michaellaness.com">m@michaellaness.com</a></li>
+		<li><a href="http://twitter.com/_michaella"><span class="genericon genericon-twitter"></span> @_Michaella</a></li>
 	</ul>
 </section>
 
