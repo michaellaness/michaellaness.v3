@@ -222,7 +222,7 @@ body#home li:nth-child(2) span {
   margin-left: 0%;
 }
 body#home li:nth-child(2):hover, body#home li:nth-child(2).active {
-  background-color: turquoise;
+  background-color: deepskyblue;
 }
 body#home li:nth-child(2):hover span, body#home li:nth-child(2).active span {
   margin-left: 2%;
@@ -292,28 +292,28 @@ body#home li span a svg .background {
   opacity: 0;
 }
 body#home li span a svg.behance .background {
-  fill: turquoise;
+  fill: deepskyblue;
 }
 body#home li span a svg.behance .icon {
-  fill: #1db2a3;
+  fill: #0082ad;
 }
 body#home li span a svg.behance:hover .background {
-  fill: #98eee6;
+  fill: #66d9ff;
 }
 body#home li span a svg.behance:hover .icon {
-  fill: turquoise;
+  fill: deepskyblue;
 }
 body#home li span a svg.linkedin .background {
-  fill: turquoise;
+  fill: deepskyblue;
 }
 body#home li span a svg.linkedin .icon {
-  fill: #1db2a3;
+  fill: #0082ad;
 }
 body#home li span a svg.linkedin:hover .background {
-  fill: #98eee6;
+  fill: #66d9ff;
 }
 body#home li span a svg.linkedin:hover .icon {
-  fill: turquoise;
+  fill: deepskyblue;
 }
 body#home li span a svg.codepen .background {
   fill: #fed544;
@@ -389,7 +389,7 @@ body#hireme .content-wrapper {
   margin: 20px auto;
   padding: 30px 40px;
   background: white;
-  border-top: 10px solid #6088a0;
+  border-top: 10px solid red;
 }
 body#hireme section {
   margin-bottom: 50px;
@@ -434,7 +434,7 @@ body#hireme section h2.section-header {
   float: left;
   font-size: 1.8em;
   text-align: right;
-  color: #6088a0;
+  color: red;
   font-family: 'Novecentowide-DemiBold';
   letter-spacing: 0.09em;
 }
@@ -458,7 +458,7 @@ body#hireme section article header h2 {
   font-size: 1.5em;
   text-transform: none;
   margin-bottom: 10px;
-  color: #6088a0;
+  color: red;
   font-family: 'Open Sans', helvetica, sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -510,7 +510,7 @@ body#hireme section#contact ul.contact-list li {
 }
 body#hireme section#contact ul.contact-list li a {
   list-style: none;
-  color: #6088a0;
+  color: red;
   border-bottom: 1px solid white;
   text-decoration: none;
   -webkit-transition: all 333ms ease-in-out;
@@ -523,7 +523,7 @@ body#hireme section#contact ul.contact-list li:last-child {
   text-align: right;
 }
 body#hireme section#contact ul.contact-list li:hover a {
-  border-color: #6088a0;
+  border-color: red;
 }
 
 /* Footer
