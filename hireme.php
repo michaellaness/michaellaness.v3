@@ -7,7 +7,7 @@
 
 
 <section id="intro" class="clearfix">
-	<img src="/images/me.jpg">
+	<img src="images/me.jpg">
 	<h1>MICHAELLA DIRKES</h1>
 	<h2>Web + UX Designer</h2>
 	<div class="content">3+ years of experience designing thoughtful and intuitive web experiences that connect both communities and brands. BFA in Graphic Design and also write HTML & CSS/SCSS fluently, looking to join a strong team.</div>
