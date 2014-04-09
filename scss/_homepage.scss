@@ -32,11 +32,18 @@ body#home {
 			letter-spacing: .02em;
 			position:relative;
 			display: inline-block;
+			line-height: 1.2;
 			@include font-pn(light-italic);
 			@include ease;
+			@media all and (max-width: $tablet) {
+				margin: 0;
+				display: block;
+				margin-top: 27px;
+				opacity: 1;
+			}
 		}
 		// Me
-		&:first-child {
+		&#me-item {
 			.me-btns {
 				z-index:9999;
 				right:15px;
@@ -54,9 +61,14 @@ body#home {
 				background-color:$red;
 				.me-btns {opacity:1;}
 			}
+			// Responsive
+			@media all and (max-width: $tablet) {
+				background-color:$red;
+				.me-btns {opacity:1;}
+			}
 		}
 		// Work
-		&:nth-child(2) {
+		&#work-item {
 			span {
 				margin-left:0%;
 				a {margin-right:10px;}
@@ -65,14 +77,18 @@ body#home {
 				background-color:$turq;
 				span {margin-left:2%;}
 			}
+			// Responsive
+			@media all and (max-width: $tablet) {background-color:$turq;}
 		}
 		// Play
-		&:nth-child(3) {
+		&#play-item {
 			span {margin-left: -2%;}
 			&:hover, &.active {
 				background-color:$yellow;
 				span {margin-left:0;}
 			}
+			// Responsive
+			@media all and (max-width: $tablet) {background-color:$yellow;}
 		}
 		// Both SVG Images
 		svg.work,
@@ -115,6 +131,13 @@ body#home {
 					opacity: 1;
 					&:hover {}
 				}
+			}
+		}
+		@media all and (max-width: $tablet) {
+			width:85%;
+			span {
+				margin-left:30px;
+				a {opacity:1;}
 			}
 		}
 	}

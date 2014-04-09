@@ -6,7 +6,7 @@
 <div class="content-wrapper">
 
 <ul>
-	<li>
+	<li id="me-item">
 		<?php include ('words/me.php'); ?>
 		<p>Michaella, an interactive designer who likes to play in the mountains.</p>
 		<div class="me-btns">
@@ -14,7 +14,7 @@
 			<a class="icon-mail" href="mailto:m@michaellaness.com"></a>
 		</div>
 	</li>
-	<li>
+	<li id="work-item">
 		<?php include ('words/work.php'); ?>
 		<span class="social">
 			<a class="icon-behance" href="http://behance.net/_michaella" target="_blank"></a>
@@ -22,7 +22,7 @@
 			</span>
 	</li>
 
-	<li>
+	<li id="play-item">
 		<?php include ('words/play.php'); ?>
 		<span class="social">
 			<a class="icon-codepen" href="http://codepen.io/michaella" target="_blank"></a>

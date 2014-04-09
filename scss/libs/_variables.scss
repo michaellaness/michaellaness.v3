@@ -19,17 +19,6 @@ $highlight-bkgd-color:$red;
 $resume-color-1:$red;//#ff33cc;
 
 
-/* Sizes
-================================================================================================= */
-
-
-$site-padding:15px;
-
-@mixin page-width {
-	width:78%;
-	max-width:1250px;
-}
-
 @mixin icon-color($color) {
 	color:darken($color, 16%);
 	&:hover {
@@ -37,6 +26,28 @@ $site-padding:15px;
 		background-color:lighten($color, 25%);
 	}
 }
+
+
+
+
+
+/* Sizes
+================================================================================================= */
+$site-padding:15px;
+
+@mixin page-width {
+	width:78%;
+	max-width:1250px;
+}
+
+
+
+
+/* Responsive
+================================================================================================= */
+$tablet:1000px;
+$small-tablet:600px;
+$phone:450px;
 
 
 

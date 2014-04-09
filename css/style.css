@@ -63,6 +63,8 @@ img {
 ================================================================================================= */
 /* Sizes
 ================================================================================================= */
+/* Responsive
+================================================================================================= */
 /* Transition Times
 ================================================================================================= */
 /* Open Sans
@@ -178,11 +180,20 @@ body#home li p {
   letter-spacing: .02em;
   position: relative;
   display: inline-block;
+  line-height: 1.2;
   font-family: 'proxima_novalight_italic';
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-body#home li:first-child .me-btns {
+@media all and (max-width: 1000px) {
+  body#home li p {
+    margin: 0;
+    display: block;
+    margin-top: 27px;
+    opacity: 1;
+  }
+}
+body#home li#me-item .me-btns {
   z-index: 9999;
   right: 15px;
   top: 15px;
@@ -191,39 +202,57 @@ body#home li:first-child .me-btns {
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-body#home li:first-child .me-btns a {
+body#home li#me-item .me-btns a {
   font-size: 35px;
   color: #f3f2f2;
 }
-body#home li:first-child .me-btns a:hover {
+body#home li#me-item .me-btns a:hover {
   color: #fed544;
 }
-body#home li:first-child:hover, body#home li:first-child.active {
+body#home li#me-item:hover, body#home li#me-item.active {
   background-color: tomato;
 }
-body#home li:first-child:hover .me-btns, body#home li:first-child.active .me-btns {
+body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   opacity: 1;
 }
-body#home li:nth-child(2) span {
+@media all and (max-width: 1000px) {
+  body#home li#me-item {
+    background-color: tomato;
+  }
+  body#home li#me-item .me-btns {
+    opacity: 1;
+  }
+}
+body#home li#work-item span {
   margin-left: 0%;
 }
-body#home li:nth-child(2) span a {
+body#home li#work-item span a {
   margin-right: 10px;
 }
-body#home li:nth-child(2):hover, body#home li:nth-child(2).active {
+body#home li#work-item:hover, body#home li#work-item.active {
   background-color: turquoise;
 }
-body#home li:nth-child(2):hover span, body#home li:nth-child(2).active span {
+body#home li#work-item:hover span, body#home li#work-item.active span {
   margin-left: 2%;
 }
-body#home li:nth-child(3) span {
+@media all and (max-width: 1000px) {
+  body#home li#work-item {
+    background-color: turquoise;
+  }
+}
+body#home li#play-item span {
   margin-left: -2%;
 }
-body#home li:nth-child(3):hover, body#home li:nth-child(3).active {
+body#home li#play-item:hover, body#home li#play-item.active {
   background-color: #fed544;
 }
-body#home li:nth-child(3):hover span, body#home li:nth-child(3).active span {
+body#home li#play-item:hover span, body#home li#play-item.active span {
   margin-left: 0;
+}
+@media all and (max-width: 1000px) {
+  body#home li#play-item {
+    background-color: #fed544;
+  }
 }
 body#home li svg.work,
 body#home li svg.play,
@@ -271,6 +300,17 @@ body#home li:hover span, body#home li.active span {
 }
 body#home li:hover span a, body#home li.active span a {
   opacity: 1;
+}
+@media all and (max-width: 1000px) {
+  body#home li {
+    width: 85%;
+  }
+  body#home li span {
+    margin-left: 30px;
+  }
+  body#home li span a {
+    opacity: 1;
+  }
 }
 
 /* Resume Page
