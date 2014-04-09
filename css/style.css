@@ -132,8 +132,8 @@ nav a {
 }
 body#hireme nav {
   position: fixed;
-  top: 40px;
-  left: 160px;
+  top: 20px;
+  left: 10px;
 }
 body#hireme nav a span {
   font-size: 60px;
@@ -374,7 +374,7 @@ body#hireme {
 }
 body#hireme .content-wrapper {
   width: 60%;
-  margin: 40px auto 50px auto;
+  margin: 20px auto 50px auto;
   padding: 30px 40px;
   background: white;
   border-top: 10px solid tomato;
