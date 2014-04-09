@@ -131,8 +131,8 @@ nav a {
   color: #444444;
 }
 body#hireme nav {
-  top: 50px;
-  left: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 body#hireme nav a span {
   font-size: 32px;
