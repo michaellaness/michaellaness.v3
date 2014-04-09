@@ -53,12 +53,10 @@ nav {
 						height: 60px;
 						float: left;
 						background-color:$grey;
-					}
 				&:hover {
-					span {
-						background-color:$resume-color-1;
-						color:$grey;
-					}
+					background-color:$resume-color-1;
+					color:$grey;
+				}
 				}
 				}
 
