@@ -133,7 +133,7 @@ nav a {
 body#hireme nav {
   position: fixed;
   top: 20px;
-  left: 10px;
+  left: 15px;
 }
 body#hireme nav a span {
   font-size: 60px;
