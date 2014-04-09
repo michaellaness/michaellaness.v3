@@ -35,6 +35,23 @@ body {
 }
 
 
+/* Nav Styles
+======================================================= */
+nav {
+	a {
+		text-decoration: none;
+		color:$headline-color;
+	}
+	body#hireme & {
+				top:10px;
+				left: 10px;
+				a {
+					span {font-size:32px;}
+				}
+
+	}
+}
+
 
 
 /* Home Page

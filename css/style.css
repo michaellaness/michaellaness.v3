@@ -124,6 +124,20 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Nav Styles
+======================================================= */
+nav a {
+  text-decoration: none;
+  color: #444444;
+}
+body#hireme nav {
+  top: 10px;
+  left: 10px;
+}
+body#hireme nav a span {
+  font-size: 32px;
+}
+
 /* Home Page
 ======================================================= */
 body#home {
