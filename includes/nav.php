@@ -1,1 +1,1 @@
-<nav><a class="back-home" href="/"><span class="genericon genericon-previous"></a></nav>
+<nav><a class="back-home icon-home" href="/"></a></nav>

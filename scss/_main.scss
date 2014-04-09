@@ -47,17 +47,16 @@ nav {
 				top: 18px;
 				left: 18px;
 				a {
-					span {
-						font-size:60px;
-						width: 60px;
-						height: 60px;
+						font-size:30px;
+						$padding:10px;
+						padding: ($padding * 1.5) $padding;
+						//height: 60px;
 						float: left;
-						@include ease;
 				&:hover {
 					background-color:$resume-color-1;
 					color:$grey;
 				}
-				}
+
 				}
 
 	}

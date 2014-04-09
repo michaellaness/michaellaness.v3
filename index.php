@@ -9,23 +9,26 @@
 	<li>
 		<?php include ('words/me.php'); ?>
 		<p>Michaella, an interactive designer who likes to play in the mountains.</p>
-		<div class="button"><a href="mailto:m@michaellaness.com"><?php include('icons/mail.php'); ?></a></div>
+		<div class="me-btns">
+			<a class="icon-resume" href="/hireme.php"></a>
+			<a class="icon-mail" href="mailto:m@michaellaness.com"></a>
+		</div>
 	</li>
 	<li>
 		<?php include ('words/work.php'); ?>
 		<span class="social">
-			<a href="http://behance.net/_michaella" target="_blank"><?php include('icons/behance.php'); ?></a>
-			<a href="http://linkedin.com/in/michaelladirkes/" target="_blank"><?php include('icons/linkedin.php'); ?></a>
+			<a class="icon-behance" href="http://behance.net/_michaella" target="_blank"></a>
+			<a class="icon-linkedin" href="http://linkedin.com/in/michaelladirkes/" target="_blank"></a>
 			</span>
 	</li>
 
 	<li>
 		<?php include ('words/play.php'); ?>
 		<span class="social">
-			<a href="http://codepen.io/michaella" target="_blank"><?php include('icons/codepen.php'); ?></a>
-			<a href="http://thatgirlmichaella.tumblr.com" target="_blank"><?php include('icons/tumblr.php'); ?></a>
-			<a href="http://twitter.com/_michaella" target="_blank"><?php include('icons/twitter.php'); ?></a>
-			<a href="http://instagram.com/michaellaness" target="_blank"><?php include('icons/instagram.php'); ?></a>
+			<a class="icon-codepen" href="http://codepen.io/michaella" target="_blank"></a>
+			<a class="icon-tumblr" href="http://thatgirlmichaella.tumblr.com" target="_blank"></a>
+			<a class="icon-twitter" href="http://twitter.com/_michaella" target="_blank"></a>
+			<a class="icon-instagram" href="http://instagram.com/michaellaness" target="_blank"></a>
 		</span>
 	</li>
 </ul>

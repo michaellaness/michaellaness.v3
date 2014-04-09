@@ -135,15 +135,12 @@ body#hireme nav {
   top: 18px;
   left: 18px;
 }
-body#hireme nav a span {
-  font-size: 60px;
-  width: 60px;
-  height: 60px;
+body#hireme nav a {
+  font-size: 30px;
+  padding: 15px 10px;
   float: left;
-  -webkit-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
 }
-body#hireme nav a span:hover {
+body#hireme nav a:hover {
   background-color: tomato;
   color: #f3f2f2;
 }
@@ -153,40 +150,11 @@ body#hireme nav a span:hover {
 body#home {
   padding: 15px;
   line-height: 2px;
+  overflow: hidden;
 }
 body#home a {
   text-decoration: none;
   color: #ccc8c8;
-}
-body#home .button {
-  z-index: 9999;
-  right: 15px;
-  top: 15px;
-  position: absolute;
-}
-body#home .button a {
-  -webkit-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-body#home .button a svg {
-  height: 50px;
-  width: 50px;
-}
-body#home .button a svg .background {
-  fill: #fed544;
-  opacity: 0;
-  -webkit-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-body#home .button a svg .icon {
-  fill: #f3f2f2;
-}
-body#home .button a svg:hover .background {
-  fill: #fed544;
-  opacity: 1;
-}
-body#home .button a svg:hover .icon {
-  fill: white;
 }
 body#home li {
   position: relative;
@@ -203,11 +171,33 @@ body#home li:first-child:hover p {
 body#home li:first-child, body#home li:nth-child(2), body#home li:nth-child(3) {
   padding: 30px 40px;
 }
+body#home li:first-child .me-btns {
+  z-index: 9999;
+  right: 15px;
+  top: 15px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home li:first-child .me-btns a {
+  font-size: 35px;
+  color: #f3f2f2;
+}
+body#home li:first-child .me-btns a:hover {
+  color: #fed544;
+}
 body#home li:first-child:hover, body#home li:first-child.active {
   background-color: tomato;
 }
+body#home li:first-child:hover .me-btns, body#home li:first-child.active .me-btns {
+  opacity: 1;
+}
 body#home li:nth-child(2) span {
   margin-left: 0%;
+}
+body#home li:nth-child(2) span a {
+  margin-right: 10px;
 }
 body#home li:nth-child(2):hover, body#home li:nth-child(2).active {
   background-color: turquoise;
@@ -250,13 +240,13 @@ body#home li svg.me {
   transition: all 333ms ease-in-out;
 }
 body#home li svg.work {
-  width: 66.5%;
+  width: 64%;
 }
 body#home li svg.play {
-  width: 51.5%;
+  width: 49%;
 }
 body#home li svg.me {
-  width: 29.5%;
+  width: 27%;
 }
 body#home li span {
   position: absolute;
@@ -264,106 +254,26 @@ body#home li span {
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-body#home li span a svg {
-  width: 55px;
-  height: 55px;
+body#home li span a {
   opacity: 0;
-  margin-left: 10px;
+  font-size: 35px;
 }
-body#home li span a svg .background,
-body#home li span a svg .icon,
-body#home li span a svg .circle {
-  -webkit-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
+body#home li span a.icon-behance, body#home li span a.icon-linkedin {
+  color: #1db2a3;
 }
-body#home li span a svg .background {
-  opacity: 0;
+body#home li span a.icon-behance:hover, body#home li span a.icon-linkedin:hover {
+  background-color: #aef2eb;
 }
-body#home li span a svg.behance .background {
-  fill: turquoise;
+body#home li span a.icon-codepen, body#home li span a.icon-tumblr, body#home li span a.icon-twitter, body#home li span a.icon-instagram {
+  color: #efbb01;
 }
-body#home li span a svg.behance .icon {
-  fill: #1db2a3;
-}
-body#home li span a svg.behance:hover .background {
-  fill: #98eee6;
-}
-body#home li span a svg.behance:hover .icon {
-  fill: turquoise;
-}
-body#home li span a svg.linkedin .background {
-  fill: turquoise;
-}
-body#home li span a svg.linkedin .icon {
-  fill: #1db2a3;
-}
-body#home li span a svg.linkedin:hover .background {
-  fill: #98eee6;
-}
-body#home li span a svg.linkedin:hover .icon {
-  fill: turquoise;
-}
-body#home li span a svg.codepen .background {
-  fill: #fed544;
-}
-body#home li span a svg.codepen .circle {
-  fill: #efbb01;
-}
-body#home li span a svg.codepen .icon {
-  fill: #efbb01;
-}
-body#home li span a svg.codepen:hover .background {
-  fill: #ffeca9;
-}
-body#home li span a svg.codepen:hover .icon {
-  fill: #fed544;
-}
-body#home li span a svg.codepen:hover .circle {
-  fill: #fed544;
-}
-body#home li span a svg.tumblr .background {
-  fill: #fed544;
-}
-body#home li span a svg.tumblr .icon {
-  fill: #efbb01;
-}
-body#home li span a svg.tumblr:hover .background {
-  fill: #ffeca9;
-}
-body#home li span a svg.tumblr:hover .icon {
-  fill: #fed544;
-}
-body#home li span a svg.instagram .background {
-  fill: #fed544;
-}
-body#home li span a svg.instagram .icon {
-  fill: #efbb01;
-}
-body#home li span a svg.instagram:hover .background {
-  fill: #ffeca9;
-}
-body#home li span a svg.instagram:hover .icon {
-  fill: #fed544;
-}
-body#home li span a svg.twitter .background {
-  fill: #fed544;
-}
-body#home li span a svg.twitter .icon {
-  fill: #efbb01;
-}
-body#home li span a svg.twitter:hover .background {
-  fill: #ffeca9;
-}
-body#home li span a svg.twitter:hover .icon {
-  fill: #fed544;
+body#home li span a.icon-codepen:hover, body#home li span a.icon-tumblr:hover, body#home li span a.icon-twitter:hover, body#home li span a.icon-instagram:hover {
+  background-color: #fff1c3;
 }
 body#home li:hover span, body#home li.active span {
   opacity: 1;
 }
-body#home li:hover span a svg, body#home li.active span a svg {
-  opacity: 1;
-}
-body#home li:hover span a svg:hover .background, body#home li.active span a svg:hover .background {
+body#home li:hover span a, body#home li.active span a {
   opacity: 1;
 }
 

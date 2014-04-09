@@ -1,9 +1,7 @@
 /* Colors
 ================================================================================================= */
-
-$red-1:#e72755;
-$red-2:tomato;
-$main:turquoise;
+$red:tomato;
+$turq:turquoise;
 $grey:#f3f2f2;
 $yellow:#fed544;
 
@@ -15,16 +13,16 @@ $link-hover-color:purple;
 
 // Highlight Colors
 $highlight-color:white;
-$highlight-bkgd-color:$red-2;
+$highlight-bkgd-color:$red;
 
 
-$resume-color-1:$red-2;//#ff33cc;
+$resume-color-1:$red;//#ff33cc;
 
 
 /* Sizes
 ================================================================================================= */
 
-$word-width:51.5%;
+
 $site-padding:15px;
 
 @mixin page-width {
@@ -32,7 +30,10 @@ $site-padding:15px;
 	max-width:1250px;
 }
 
-
+@mixin icon-color($color) {
+	color:darken($color, 16%);
+	&:hover {background-color:lighten($color, 25%);}
+}
 
 
 

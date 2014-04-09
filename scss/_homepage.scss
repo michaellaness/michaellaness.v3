@@ -1,35 +1,12 @@
+$icon-size:35px;
+
 body#home {
 	padding:$site-padding;
 	line-height:2px;
+	overflow:hidden;
 	a {
 		text-decoration: none;
 		color:darken($grey, 16%);
-	}
-	.button {
-		z-index:9999;
-		right:15px;
-		top:15px;
-		position:absolute;
-		a {
-			@include ease(333ms);
-			svg {
-				height:50px;
-				width:50px;
-				.background {
-					fill:$yellow;
-					opacity: 0;
-					@include ease;
-				}
-				.icon {fill:$grey;}
-				&:hover {
-					.background {
-						fill:$yellow;
-						opacity: 1;
-					}
-					.icon {fill: white;}
-				}
-			}
-		}
 	}
 	li {
 		position:relative;
@@ -50,13 +27,32 @@ body#home {
 	}
 		// Me
 		&:first-child {
-			&:hover, &.active {background-color:$red-2;}
+			.me-btns {
+				z-index:9999;
+				right:15px;
+				top:15px;
+				position:absolute;
+				opacity: 0;
+				@include ease;
+				a {
+					font-size: $icon-size;
+					color:$grey;
+					&:hover {color:$yellow;}//darken($red, 20%);}
+				}
+			}
+			&:hover, &.active {
+				background-color:$red;
+				.me-btns {opacity:1;}
+			}
 		}
 		// Work
 		&:nth-child(2) {
-			span {margin-left:0%;}
+			span {
+				margin-left:0%;
+				a {margin-right:10px;}
+			}
 			&:hover, &.active {
-				background-color:$main;
+				background-color:$turq;
 				span {margin-left:2%;}
 			}
 		}
@@ -70,7 +66,7 @@ body#home {
 		}
 		p {
 			@include font-pn(regular);
-			color:darken($red-2, 25%);
+			color:darken($red, 25%);
 			font-weight: 300;
 			font-style: italic;
 			font-size: 21px;
@@ -93,96 +89,37 @@ body#home {
 			@include ease;
 		}
 		// Work Letters
+		$word-width:49%;
 		svg.work {width:$word-width + 15%;}
 		// Play Letters
 		svg.play {width:$word-width;}
 		// Me Letters
 		svg.me {width:$word-width - 22%;}
-		// Social
 		span {
 			position:absolute;
 			bottom:35px;
   			@include ease;
 			a {
-				svg {
-					width:55px;
-					height: 55px;
-					opacity: 0;
-					margin-left:10px;
-			  		.background,
-			  		.icon,
-			  		.circle {@include ease;}
-					.background {opacity: 0;}
-					// Behance
-					&.behance {
-						.background {fill:$main;}
-						.icon {fill:darken($main, 16%);}
-						&:hover {
-							.background {fill:lighten($main, 20%);}
-							.icon {fill:$main;}
-						}
-					}
-					// Linkedin
-					&.linkedin {
-						.background {fill:$main;}
-						.icon {fill:darken($main, 16%);}
-						&:hover {
-							.background {fill:lighten($main, 20%);}
-							.icon {fill:$main;}
-						}
-					}
-					// Codepen
-					&.codepen {
-						.background {fill:$yellow;}
-						.circle {fill:darken($yellow, 16%);}
-						.icon {fill:darken($yellow, 16%);}
-						&:hover {
-							.background {fill:lighten($yellow, 20%);}
-							.icon {fill:$yellow;}
-							.circle {fill:$yellow;}
-						}
-					}
-					// Tumblr
-					&.tumblr {
-						.background {fill:$yellow;}
-						.icon {fill:darken($yellow, 16%);}
-						&:hover {
-							.background {fill:lighten($yellow, 20%);}
-							.icon {fill:$yellow;}
-						}
-					}
-					// Instagram
-					&.instagram {
-						.background {	fill:$yellow;}
-						.icon {fill:darken($yellow, 16%);}
-						&:hover {
-							.background {fill:lighten($yellow, 20%);}
-							.icon {fill:$yellow;}
-						}
-					}
-					// Twitter
-				&.twitter {
-					.background {fill:$yellow;}
-					.icon {fill:darken($yellow, 16%);}
-					&:hover {
-						.background {fill:lighten($yellow, 20%);}
-						.icon {fill:$yellow;}
-					}
-				}
+				opacity: 0;
+				font-size:$icon-size;
+				// Work Icons
+				&.icon-behance,
+				&.icon-linkedin {@include icon-color($turq);}
+
+				// Play Icons
+				&.icon-codepen,
+				&.icon-tumblr,
+				&.icon-twitter,
+				&.icon-instagram {@include icon-color($yellow);}
 			}
 		}
-	}
 		&:hover,
 		&.active {
 			span {
 				opacity:1;
 				a {
-					svg {
-						opacity: 1;
-						&:hover {
-							.background {opacity: 1;}
-						}
-					}
+					opacity: 1;
+					&:hover {}
 				}
 			}
 		}
