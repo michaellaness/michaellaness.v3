@@ -131,7 +131,7 @@ nav a {
   color: #444444;
 }
 body#hireme nav {
-  position: absolute;
+  position: fixed;
   top: 40px;
   left: 160px;
 }
@@ -140,7 +140,8 @@ body#hireme nav a span {
   width: 60px;
   height: 60px;
   float: left;
-  background-color: #f3f2f2;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
 }
 body#hireme nav a span:hover {
   background-color: tomato;
