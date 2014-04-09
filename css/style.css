@@ -71,42 +71,6 @@ img {
 ================================================================================================= */
 /* Novecento
 ================================================================================================= */
-@font-face {
-  font-family: 'Novecentowide-Bold';
-  src: url("/fonts/novecento/25DFFC_0_0.eot");
-  src: url("/fonts/novecento/25DFFC_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_0_0.woff") format("woff"), url("/fonts/novecento/25DFFC_0_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Light';
-  src: url("/fonts/novecento/25DFFC_1_0.eot");
-  src: url("/fonts/novecento/25DFFC_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_1_0.woff") format("woff"), url("/fonts/novecento/25DFFC_1_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-DemiBold';
-  src: url("/fonts/novecento/25DFFC_2_0.eot");
-  src: url("/fonts/novecento/25DFFC_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_2_0.woff") format("woff"), url("/fonts/novecento/25DFFC_2_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Book';
-  src: url("/fonts/novecento/25DFFC_3_0.eot");
-  src: url("/fonts/novecento/25DFFC_3_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_3_0.woff") format("woff"), url("/fonts/novecento/25DFFC_3_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Normal';
-  src: url("/fonts/novecento/25DFFC_4_0.eot");
-  src: url("/fonts/novecento/25DFFC_4_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_4_0.woff") format("woff"), url("/fonts/novecento/25DFFC_4_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Novecentowide-Medium';
-  src: url("/fonts/novecento/25DFFC_5_0.eot");
-  src: url("/fonts/novecento/25DFFC_5_0.eot?#iefix") format("embedded-opentype"), url("/fonts/novecento/25DFFC_5_0.woff") format("woff"), url("/fonts/novecento/25DFFC_5_0.ttf") format("truetype");
-}
-
 /* Links and Headers
 ======================================================= */
 a {
@@ -222,7 +186,7 @@ body#home li:nth-child(2) span {
   margin-left: 0%;
 }
 body#home li:nth-child(2):hover, body#home li:nth-child(2).active {
-  background-color: deepskyblue;
+  background-color: turquoise;
 }
 body#home li:nth-child(2):hover span, body#home li:nth-child(2).active span {
   margin-left: 2%;
@@ -292,28 +256,28 @@ body#home li span a svg .background {
   opacity: 0;
 }
 body#home li span a svg.behance .background {
-  fill: deepskyblue;
+  fill: turquoise;
 }
 body#home li span a svg.behance .icon {
-  fill: #0082ad;
+  fill: #1db2a3;
 }
 body#home li span a svg.behance:hover .background {
-  fill: #66d9ff;
+  fill: #98eee6;
 }
 body#home li span a svg.behance:hover .icon {
-  fill: deepskyblue;
+  fill: turquoise;
 }
 body#home li span a svg.linkedin .background {
-  fill: deepskyblue;
+  fill: turquoise;
 }
 body#home li span a svg.linkedin .icon {
-  fill: #0082ad;
+  fill: #1db2a3;
 }
 body#home li span a svg.linkedin:hover .background {
-  fill: #66d9ff;
+  fill: #98eee6;
 }
 body#home li span a svg.linkedin:hover .icon {
-  fill: deepskyblue;
+  fill: turquoise;
 }
 body#home li span a svg.codepen .background {
   fill: #fed544;
@@ -389,7 +353,7 @@ body#hireme .content-wrapper {
   margin: 20px auto;
   padding: 30px 40px;
   background: white;
-  border-top: 10px solid red;
+  border-top: 10px solid tomato;
 }
 body#hireme section {
   margin-bottom: 50px;
@@ -434,7 +398,8 @@ body#hireme section h2.section-header {
   float: left;
   font-size: 1.8em;
   text-align: right;
-  color: red;
+  line-height: 1;
+  color: tomato;
   font-family: 'Novecentowide-DemiBold';
   letter-spacing: 0.09em;
 }
@@ -458,7 +423,7 @@ body#hireme section article header h2 {
   font-size: 1.5em;
   text-transform: none;
   margin-bottom: 10px;
-  color: red;
+  color: #ff3814;
   font-family: 'Open Sans', helvetica, sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -510,7 +475,7 @@ body#hireme section#contact ul.contact-list li {
 }
 body#hireme section#contact ul.contact-list li a {
   list-style: none;
-  color: red;
+  color: tomato;
   border-bottom: 1px solid white;
   text-decoration: none;
   -webkit-transition: all 333ms ease-in-out;
@@ -523,7 +488,7 @@ body#hireme section#contact ul.contact-list li:last-child {
   text-align: right;
 }
 body#hireme section#contact ul.contact-list li:hover a {
-  border-color: red;
+  border-color: tomato;
 }
 
 /* Footer

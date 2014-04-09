@@ -1,13 +1,11 @@
 /* Colors
 ================================================================================================= */
 
-$red-1:red;
+$red-1:#e72755;
 $red-2:tomato;
-$main:deepskyblue;
+$main:turquoise;
 $grey:#f3f2f2;
 $yellow:#fed544;
-$nipple:#6088a0;
-
 
 $headline-color:#444;
 $body-copy-color:#444;
@@ -20,7 +18,7 @@ $highlight-color:white;
 $highlight-bkgd-color:$red-2;
 
 
-$resume-color-1:$red-1;//#ff33cc;
+$resume-color-1:$red-2;//#ff33cc;
 
 
 /* Sizes
@@ -33,3 +31,8 @@ $site-padding:15px;
 	width:78%;
 	max-width:1250px;
 }
+
+
+
+
+

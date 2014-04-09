@@ -2,9 +2,10 @@
 
 <body id="hireme">
 
+<?php include('includes/nav.php'); ?>
+
 <!-- Begin Content -->
 <div class="content-wrapper">
-
 
 <section id="intro" class="clearfix">
 	<img src="images/me.jpg">

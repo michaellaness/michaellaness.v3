@@ -25,7 +25,6 @@
 
 /* Novecento
 ================================================================================================= */
-@import "fonts/_novecento";
 
 @mixin font-nov($weight) {
    @if $weight == 'bold' {font-family: 'Novecentowide-Bold';}

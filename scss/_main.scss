@@ -100,6 +100,7 @@ body#hireme {
 			float:left;
 			font-size: 1.8em;
 			text-align:right;
+			line-height: 1;
 			color:$resume-color-1;//lighten($headline-color,25%);
 			@include font-nov(demibold);
 		}
@@ -121,7 +122,7 @@ body#hireme {
 					font-size:1.5em;
 					text-transform: none;
 					margin-bottom: 10px;
-					color:$resume-color-1;
+					color:darken($resume-color-1, 10%);
 					@include font-os(300, italic);
 }
 				.meta {
@@ -223,6 +224,9 @@ footer {
 	color: white;
 	text-decoration: none;
 }
+
+
+
 
 
 // FIrst & Last Overrides
