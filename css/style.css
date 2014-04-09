@@ -131,11 +131,12 @@ nav a {
   color: #444444;
 }
 body#hireme nav {
-  top: 10px;
-  left: 10px;
+  top: 50px;
+  left: 30px;
 }
 body#hireme nav a span {
   font-size: 32px;
+  margin-right: 15px;
 }
 
 /* Home Page
