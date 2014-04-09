@@ -43,12 +43,13 @@ nav {
 		color:$headline-color;
 	}
 	body#hireme & {
-				padding-top:50px;
-				padding-left: 30px;
+				position:absolute;
+				top:20px;
+				left: 20px;
 				a {
 					span {
 						font-size:40px;
-						margin-right: 15px;
+						margin-right: 18px;
 					}
 				&:hover {color:$resume-color-1;}
 
