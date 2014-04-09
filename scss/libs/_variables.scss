@@ -32,7 +32,10 @@ $site-padding:15px;
 
 @mixin icon-color($color) {
 	color:darken($color, 16%);
-	&:hover {background-color:lighten($color, 25%);}
+	&:hover {
+		color:$color;
+		background-color:lighten($color, 25%);
+	}
 }
 
 

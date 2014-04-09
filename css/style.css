@@ -166,10 +166,21 @@ body#home li {
 }
 body#home li:first-child:hover p {
   opacity: 1;
-  margin-left: 30%;
+  margin-left: 2%;
 }
 body#home li:first-child, body#home li:nth-child(2), body#home li:nth-child(3) {
   padding: 30px 40px;
+}
+body#home li p {
+  color: #c61e00;
+  font-size: 21px;
+  opacity: 0;
+  letter-spacing: .02em;
+  position: relative;
+  display: inline-block;
+  font-family: 'proxima_novalight_italic';
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
 }
 body#home li:first-child .me-btns {
   z-index: 9999;
@@ -214,23 +225,6 @@ body#home li:nth-child(3):hover, body#home li:nth-child(3).active {
 body#home li:nth-child(3):hover span, body#home li:nth-child(3).active span {
   margin-left: 0;
 }
-body#home li p {
-  font-family: 'proxima_nova_rgregular';
-  color: #c61e00;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 21px;
-  opacity: 0;
-  text-align: left;
-  line-height: 24px;
-  position: absolute;
-  letter-spacing: .02em;
-  bottom: 28px;
-  margin-left: 25%;
-  width: 55%;
-  -webkit-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
 body#home li svg.work,
 body#home li svg.play,
 body#home li svg.me {
@@ -262,12 +256,14 @@ body#home li span a.icon-behance, body#home li span a.icon-linkedin {
   color: #1db2a3;
 }
 body#home li span a.icon-behance:hover, body#home li span a.icon-linkedin:hover {
+  color: turquoise;
   background-color: #aef2eb;
 }
 body#home li span a.icon-codepen, body#home li span a.icon-tumblr, body#home li span a.icon-twitter, body#home li span a.icon-instagram {
   color: #efbb01;
 }
 body#home li span a.icon-codepen:hover, body#home li span a.icon-tumblr:hover, body#home li span a.icon-twitter:hover, body#home li span a.icon-instagram:hover {
+  color: #fed544;
   background-color: #fff1c3;
 }
 body#home li:hover span, body#home li.active span {
