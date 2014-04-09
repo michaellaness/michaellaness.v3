@@ -41,7 +41,7 @@ nav {
 	a {
 		text-decoration: none;
 		color:$headline-color;
-		background:$gray;
+		background-color:$gray;
 	}
 	body#hireme & {
 				position:absolute;
@@ -56,8 +56,8 @@ nav {
 					}
 				&:hover {
 					color:$gray;
-					background:$resume-color-1;}
-
+					background-color:$resume-color-1;
+				}
 				}
 
 	}
