@@ -41,7 +41,6 @@ nav {
 	a {
 		text-decoration: none;
 		color:$headline-color;
-		background-color:$gray;
 	}
 	body#hireme & {
 				position:absolute;
@@ -53,10 +52,13 @@ nav {
 						width: 60px;
 						height: 60px;
 						float: left;
+						background-color:$grey;
 					}
 				&:hover {
-					color:$gray;
-					background-color:$resume-color-1;
+					span {
+						background-color:$resume-color-1;
+						color:$grey;
+					}
 				}
 				}
 
