@@ -44,11 +44,14 @@ nav {
 	}
 	body#hireme & {
 				position:absolute;
-				top:40px;
-				left: 15px;
+				top: 40px;
+				left: 160px;
 				a {
 					span {
 						font-size:60px;
+						width: 60px;
+						height: 60px;
+						float: left;
 					}
 				&:hover {color:$resume-color-1;}
 

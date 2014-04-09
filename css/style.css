@@ -133,10 +133,13 @@ nav a {
 body#hireme nav {
   position: absolute;
   top: 40px;
-  left: 15px;
+  left: 160px;
 }
 body#hireme nav a span {
   font-size: 60px;
+  width: 60px;
+  height: 60px;
+  float: left;
 }
 body#hireme nav a:hover {
   color: tomato;
