@@ -11,7 +11,7 @@
 	<img src="images/me.jpg">
 	<h1>MICHAELLA DIRKES</h1>
 	<h2>Web + UX Designer</h2>
-	<div class="content">3+ years of experience designing thoughtful and intuitive web experiences that connect both communities and brands. BFA in Graphic Design and also write HTML & CSS/SCSS fluently, looking to join a strong team.</div>
+	<div class="content">I use design thinking to solve communication problems and create awesome visual experiences. I also write HTML + CSS so the web experiences I design are awesome too. BFA in Graphic Design with 3 years of experience—currently looking to join a strong team.</div>
 </section>
 
 
@@ -27,16 +27,16 @@
 				<div class="location">DENVER, CO</div>
 			</div>
 		</header>
-		<div class="content">Various web design & branding projects, including identity systems, lots of responsive web design, copywriting, web content creation, and social media strategies for local companies and startups.</div>
+		<div class="content">Design  for web & branding, including identity systems, lots of responsive web design, copywriting, web content creation, and social media strategies for local companies and startups.</div>
 	</article>
 
 
 	<article>
 		<header>
 			<h1>STEAMBOAT DESIGN ASSOCIATES</h1>
-			<h2>Part-time Web Designer & Front-end Developer</h2>
+			<h2>Freelance Web Designer & Front-end Developer</h2>
 			<div class="meta">
-				<div class="date">DEC 2013 – JUNE 2014</div>
+				<div class="date">DEC 2013 – PRESENT</div>
 				<div class="location">STEAMBOAT SPRINGS, CO</div>
 			</div>
 		</header>
@@ -52,7 +52,7 @@
 				<div class="location">DENVER, CO</div>
 			</div>
 		</header>
-		<div class="content">Worked w/ team of 6 over 48 hours to develop Tutorgrape, a responsive web app, which uses several public data sets to easily and safely connect students and tutors. Won best in Education track & 2 best uses of APIs (ESRI & Sendgrid).</div>
+		<div class="content">Collaborated with team of 6 over 48 hours to develop Tutorgrape, a responsive web app, which uses several public data sets to easily and safely connect students and tutors. Won best in Education track & 2 best uses of APIs (ESRI & Sendgrid).</div>
 	</article>
 
 	<article>
@@ -64,7 +64,7 @@
 				<div class="location">DENVER, CO</div>
 			</div>
 		</header>
-		<div class="content">As the only designer at the firm, I played art director, content strategist, and production artist, as well as social media strategist & copywriter.</div>
+		<div class="content">Design, research, strategy, wireframing, occasional art director, occasional content strategist & copywriter. Worked closely with developers to ensure success of designs, also in charge of handling many branding needs for clients and Fireant.</div>
 	</article>
 
 	<article>
@@ -76,7 +76,7 @@
 				<div class="location">DENVER, CO</div>
 			</div>
 		</header>
-		<div class="content">Assisted in the planning, design, launch & QA of a 60+ project portfolio redesign for the web. I also successfully updated their branding and presence across the web.</div>
+		<div class="content">Assisted in the planning, design, & launch of a 60+ project portfolio redesign for the web. Worked closely with development company for quality assurance. I also successfully updated their branding and presence across the web.</div>
 	</article>
 </section>
 
