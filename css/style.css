@@ -73,6 +73,8 @@ img {
 ================================================================================================= */
 /* Novecento
 ================================================================================================= */
+/* Skolar
+================================================================================================= */
 /* Links and Headers
 ======================================================= */
 a {
@@ -175,7 +177,7 @@ body#home li:first-child, body#home li:nth-child(2), body#home li:nth-child(3) {
 }
 body#home li p {
   color: #c61e00;
-  font-size: 21px;
+  font-size: 22px;
   opacity: 0;
   letter-spacing: .02em;
   position: relative;
@@ -185,7 +187,7 @@ body#home li p {
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
   body#home li p {
     margin: 0;
     display: block;
@@ -203,11 +205,55 @@ body#home li#me-item .me-btns {
   transition: all 333ms ease-in-out;
 }
 body#home li#me-item .me-btns a {
-  font-size: 35px;
-  color: #f3f2f2;
+  font-size: 33px;
+  color: #f42500;
+  margin-left: 2px;
+  position: relative;
+}
+body#home li#me-item .me-btns a span {
+  min-width: 60px;
+  position: absolute;
+  bottom: -30px;
+  left: -8px;
+  padding: 15px 0;
+  background: #fed544;
+  color: tomato;
+  text-align: center;
+  font-size: 11px;
+  line-height: 0.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0;
+  font-family: 'proxima_novasemibold';
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
+}
+body#home li#me-item .me-btns a span:before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -5px;
+  left: 26px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fed544;
+}
+body#home li#me-item .me-btns a.icon-mail {
+  font-size: 37px;
+}
+body#home li#me-item .me-btns a.icon-mail span {
+  left: -5px;
+}
+body#home li#me-item .me-btns a.icon-mail span:before {
+  left: 43%;
 }
 body#home li#me-item .me-btns a:hover {
-  color: #fed544;
+  color: #f3f2f2;
+}
+body#home li#me-item .me-btns a:hover span {
+  opacity: 1;
+  bottom: -38px;
 }
 body#home li#me-item:hover, body#home li#me-item.active {
   background-color: tomato;
@@ -215,7 +261,7 @@ body#home li#me-item:hover, body#home li#me-item.active {
 body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   opacity: 1;
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
   body#home li#me-item {
     background-color: tomato;
   }
@@ -226,16 +272,13 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
 body#home li#work-item span {
   margin-left: 0%;
 }
-body#home li#work-item span a {
-  margin-right: 10px;
-}
 body#home li#work-item:hover, body#home li#work-item.active {
   background-color: turquoise;
 }
 body#home li#work-item:hover span, body#home li#work-item.active span {
-  margin-left: 2%;
+  margin-left: 2.5%;
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
   body#home li#work-item {
     background-color: turquoise;
   }
@@ -249,7 +292,7 @@ body#home li#play-item:hover, body#home li#play-item.active {
 body#home li#play-item:hover span, body#home li#play-item.active span {
   margin-left: 0;
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
   body#home li#play-item {
     background-color: #fed544;
   }
@@ -279,19 +322,25 @@ body#home li span {
 }
 body#home li span a {
   opacity: 0;
-  font-size: 35px;
+  font-size: 30px;
+  display: block;
+  line-height: 1.2;
+  vertical-align: baseline;
+  font-family: "skolar",serif;
+  font-style: normal;
+  font-weight: 400;
 }
-body#home li span a.icon-behance, body#home li span a.icon-linkedin {
-  color: #1db2a3;
+body#home li span a.behance, body#home li span a.linkedin {
+  color: #1aa093;
 }
-body#home li span a.icon-behance:hover, body#home li span a.icon-linkedin:hover {
+body#home li span a.behance:hover, body#home li span a.linkedin:hover {
   color: turquoise;
   background-color: #aef2eb;
 }
-body#home li span a.icon-codepen, body#home li span a.icon-tumblr, body#home li span a.icon-twitter, body#home li span a.icon-instagram {
-  color: #efbb01;
+body#home li span a.blog, body#home li span a.codepen, body#home li span a.tumblr, body#home li span a.twitter, body#home li span a.instagram {
+  color: #dbab01;
 }
-body#home li span a.icon-codepen:hover, body#home li span a.icon-tumblr:hover, body#home li span a.icon-twitter:hover, body#home li span a.icon-instagram:hover {
+body#home li span a.blog:hover, body#home li span a.codepen:hover, body#home li span a.tumblr:hover, body#home li span a.twitter:hover, body#home li span a.instagram:hover {
   color: #fed544;
   background-color: #fff1c3;
 }
@@ -301,7 +350,7 @@ body#home li:hover span, body#home li.active span {
 body#home li:hover span a, body#home li.active span a {
   opacity: 1;
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1024px) {
   body#home li {
     width: 85%;
   }

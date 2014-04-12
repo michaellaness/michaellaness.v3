@@ -22,6 +22,10 @@
 	<link href='fonts/novecento/css.css' rel="stylesheet" type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
 
+	<!-- Typekit -->
+<script type="text/javascript" src="//use.typekit.net/was3rxf.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
 
 <script type="text/javascript">

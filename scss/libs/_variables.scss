@@ -19,8 +19,8 @@ $highlight-bkgd-color:$red;
 $resume-color-1:$red;//#ff33cc;
 
 
-@mixin icon-color($color) {
-	color:darken($color, 16%);
+@mixin word-color($color) {
+	color:darken($color, 20%);
 	&:hover {
 		color:$color;
 		background-color:lighten($color, 25%);
@@ -45,9 +45,17 @@ $site-padding:15px;
 
 /* Responsive
 ================================================================================================= */
-$tablet:1000px;
-$small-tablet:600px;
-$phone:450px;
-
-
-
+@mixin responsive($size) {
+	@if $size == 'tablet' {
+		@media all and (max-width: 1024px) {@content;}
+	}
+	@else if $size == 'portrait-tablet' {
+		@media all and (max-width: 768px) {@content;}
+	}
+	@else if $size == 'phone' {
+		@media all and (max-width: 450px) {@content;}
+	}
+	@else {
+		@media all and (max-width: $size) {@content;}
+	}
+}

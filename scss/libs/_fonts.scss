@@ -36,3 +36,12 @@
    letter-spacing: 0.09em;
 }
 
+
+/* Skolar
+================================================================================================= */
+@mixin font-skol($weight:400, $style:normal) {
+	font-family: "skolar",serif;
+	font-style:$style;
+	font-weight:$weight;
+}
+

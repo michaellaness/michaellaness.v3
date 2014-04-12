@@ -27,7 +27,7 @@ body#home {
 		}
 		p {
 			color:darken($red, 25%);
-			font-size: 21px;
+			font-size: 22px;
 			opacity: 0;
 			letter-spacing: .02em;
 			position:relative;
@@ -35,7 +35,7 @@ body#home {
 			line-height: 1.2;
 			@include font-pn(light-italic);
 			@include ease;
-			@media all and (max-width: $tablet) {
+			@include responsive(tablet) {
 				margin: 0;
 				display: block;
 				margin-top: 27px;
@@ -52,9 +52,52 @@ body#home {
 				opacity: 0;
 				@include ease;
 				a {
-					font-size: $icon-size;
-					color:$grey;
-					&:hover {color:$yellow;}//darken($red, 20%);}
+					font-size: $icon-size - 2px;
+					color:darken($red, 16%);//$grey;
+					margin-left: 2px;
+					position: relative;
+					span {
+						min-width:60px;
+						position:absolute;
+						bottom:-30px;
+						left:-8px;
+						padding:15px 0;
+						background:$yellow;//darken($red, 16%);
+						color:$red;
+						text-align: center;
+						font-size: 11px;
+						line-height: 0.3;
+						letter-spacing: 0.08em;
+						text-transform:uppercase;
+						opacity: 0;
+						@include font-pn(semibold);
+						@include ease;
+						&:before {
+							content:'';
+							width: 0;
+							height: 0;
+							position:absolute;
+							top:-5px;
+							left:26px;
+							border-left: 5px solid transparent;
+							border-right: 5px solid transparent;
+							border-bottom: 5px solid $yellow;
+						}
+					}
+					&.icon-mail {
+						font-size: ($icon-size + 2px);
+						span {
+							left:-5px;
+							&:before {left:43%;}
+						}
+					}
+					&:hover {
+						color:$grey;//$yellow;
+						span {
+							opacity: 1;
+							bottom:-38px;
+						}
+					}
 				}
 			}
 			&:hover, &.active {
@@ -62,7 +105,7 @@ body#home {
 				.me-btns {opacity:1;}
 			}
 			// Responsive
-			@media all and (max-width: $tablet) {
+			@include responsive(tablet) {
 				background-color:$red;
 				.me-btns {opacity:1;}
 			}
@@ -71,14 +114,14 @@ body#home {
 		&#work-item {
 			span {
 				margin-left:0%;
-				a {margin-right:10px;}
+				//a {margin-right:10px;}
 			}
 			&:hover, &.active {
 				background-color:$turq;
-				span {margin-left:2%;}
+				span {margin-left:2.5%;}
 			}
 			// Responsive
-			@media all and (max-width: $tablet) {background-color:$turq;}
+			@include responsive(tablet) {background-color:$turq;}
 		}
 		// Play
 		&#play-item {
@@ -88,7 +131,7 @@ body#home {
 				span {margin-left:0;}
 			}
 			// Responsive
-			@media all and (max-width: $tablet) {background-color:$yellow;}
+			@include responsive(tablet) {background-color:$yellow;}
 		}
 		// Both SVG Images
 		svg.work,
@@ -111,16 +154,21 @@ body#home {
   			@include ease;
 			a {
 				opacity: 0;
-				font-size:$icon-size;
+				font-size: 30px;
+				display: block;
+				line-height: 1.2;
+				vertical-align: baseline;
+				@include font-skol;
 				// Work Icons
-				&.icon-behance,
-				&.icon-linkedin {@include icon-color($turq);}
+				&.behance,
+				&.linkedin {@include word-color($turq);}
 
 				// Play Icons
-				&.icon-codepen,
-				&.icon-tumblr,
-				&.icon-twitter,
-				&.icon-instagram {@include icon-color($yellow);}
+				&.blog,
+				&.codepen,
+				&.tumblr,
+				&.twitter,
+				&.instagram {@include word-color($yellow);}
 			}
 		}
 		&:hover,
@@ -133,7 +181,7 @@ body#home {
 				}
 			}
 		}
-		@media all and (max-width: $tablet) {
+		@include responsive(tablet) {
 			width:85%;
 			span {
 				margin-left:30px;
