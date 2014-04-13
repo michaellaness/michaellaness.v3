@@ -317,6 +317,7 @@ body#home li svg.me {
 body#home li span {
   position: absolute;
   bottom: 35px;
+  text-align: right;
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
@@ -325,7 +326,8 @@ body#home li span a {
   font-size: 30px;
   display: block;
   line-height: 1.2;
-  vertical-align: baseline;
+  width: 100%;
+  float: right;
   font-family: "skolar",serif;
   font-style: normal;
   font-weight: 400;
