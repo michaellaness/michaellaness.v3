@@ -13,13 +13,9 @@
 /* Proxima Nova
 ================================================================================================= */
 @mixin font-pn($weight) {
-	@if $weight == 'light' {font-family:'proxima_novalight';}
-	@else if $weight == 'light-italic' {font-family: 'proxima_novalight_italic';}
-	@else if $weight == 'regular' {font-family: 'proxima_nova_rgregular';}
-	@else if $weight == 'semibold' {font-family: 'proxima_novasemibold';}
-	@else if $weight == 'bold' {font-family: 'proxima_nova_rgbold';}
-	@else if $weight == 'extrabold' {font-family: 'proxima_novaextrabold';}
-	@else if $weight == 'condensed' {font-family: 'proxima_nova_cn_rgregular';}
+	@if $weight == 'light-italic' {font-family: 'proxima-nova';font-weight:100; font-style:italic;}
+	@else if $weight == 'regular' {font-family: 'proxima-nova'; font-weight:300;}
+	@else if $weight == 'condensed' {font-family: 'proxima-nova-alt-condensed';font-weight:100; }
 }
 
 

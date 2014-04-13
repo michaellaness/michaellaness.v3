@@ -31,7 +31,6 @@ h5 {font-size:1.5em;}
 body {
 	font-size:62.5%;
 	color:$body-copy-color;
-	//@include font-os(400);
 	@include font-pn(regular);
 }
 
