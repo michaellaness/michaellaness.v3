@@ -15,7 +15,7 @@
 		</div>
 	</li>
 	<li id="work-item">
-		<?php include('words/play.php'); ?>
+		<?php include('words/work.php'); ?>
 		<span class="social">
 			<a class="behance" href="http://behance.net/_michaella" target="_blank">behance</a>
 			<a class="linkedin" href="http://linkedin.com/in/michaelladirkes/" target="_blank">linkedin</a>
@@ -23,7 +23,7 @@
 	</li>
 
 	<li id="play-item">
-		<?php include('words/work.php'); ?>
+		<?php include('words/play.php'); ?>
 		<span class="social">
 			<a class="blog" href="http://blog.michaellaness.com">wordpress</a>
 			<a class="twitter" href="http://twitter.com/_michaella" target="_blank">twitter</a>
