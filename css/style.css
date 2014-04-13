@@ -668,17 +668,30 @@ body#hireme section article .content {
 }
 body#hireme section ul.skill-list {
   display: inline-block;
-  width: 49%;
-  margin-right: 2%;
+  width: 100%;
   float: left;
 }
 body#hireme section ul.skill-list li {
+  width: 50%;
+  float: left;
   list-style: none;
   margin-bottom: 25px;
   font-size: 1.3em;
   color: #999;
   font-family: 'Novecentowide-Medium';
   letter-spacing: 0.09em;
+}
+@media all and (max-width: 768px) {
+  body#hireme section ul.skill-list li {
+    width: auto;
+    float: left;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 1.3em;
+    background: #f3f2f2;
+    padding: 10px;
+  }
 }
 body#hireme section#contact {
   margin-bottom: 0;

@@ -196,10 +196,12 @@ body#hireme {
 		}
 		ul.skill-list {
 			display: inline-block;
-			width:49%;
-			margin-right:2%;
+			width:100%;
+			//margin-right:2%;
 			float:left;
 			li {
+				width:50%;
+				float:left;
 				list-style: none;
 				margin-bottom: 25px;
 				font-size: 1.3em;
@@ -207,8 +209,16 @@ body#hireme {
 				@include font-nov(medium);
 			}
 			@include responsive(portrait-tablet) {
-				//width:40%;
-				//margin-left:9%;
+				li {
+					width:auto;
+					float: left;
+					display: inline-block;
+					margin-bottom: 10px;
+					margin-right:10px;
+					font-size: 1.3em;
+					background:$grey;
+					padding:10px;
+				}
 			}
 		}
 		&#contact {

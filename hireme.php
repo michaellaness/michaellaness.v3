@@ -112,16 +112,14 @@
 	<article>
 		<ul class="skill-list">
 			<li>WEB LAYOUT</li>
-			<li>CREATIVE PROBLEM SOLVING</li>
-			<li>BRANDING & IDENTITY</li>
-			<li>CREATIVE COPYWRITING</li>
-			<li>SOCIAL MEDIA</li>
-		</ul>
-		<ul class="skill-list last">
 			<li>RESPONSIVE DESIGN</li>
+			<li>CREATIVE PROBLEM SOLVING</li>
 			<li>HTML/CSS/SASS</li>
+			<li>BRANDING & IDENTITY</li>
 			<li>WORDPRESS</li>
+			<li>CREATIVE COPYWRITING</li>
 			<li>CREATIVE SUITE</li>
+			<li>SOCIAL MEDIA</li>
 			<li>PHOTOGRAPHY</li>
 		</ul>
 	</article>
