@@ -1,9 +1,35 @@
+
+/* Variables
+================================================================================================= */
 $site-padding:15px;
 
 $icon-size:35px;
 
 $item-width:94%;
 $item-padding: (100% - $item-width) / 2;
+
+
+@mixin word-color($color) {
+	color:darken($color, 20%);
+	&:hover {
+		color:$color;
+		background-color:lighten($color, 25%);
+	}
+	&:after {background:darken($color, 20%);}
+	@include responsive(tablet) {
+		&:hover {
+			color:darken($color, 20%);
+			background:$color;
+		}
+	}
+}
+
+
+
+
+
+/* Main Styles
+================================================================================================= */
 
 body#home {
 	padding:$site-padding;

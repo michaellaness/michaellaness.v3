@@ -1,77 +1,32 @@
 
 
-/* Links and Headers
-======================================================= */
-a {
-	color:$link-color;
-	@include ease;
-	&:focus, &:hover, &:active {outline: 0;}
-	&:hover {color:$link-hover-color;}
-}
-
-h1, h2, h3, h4, h5 {
-	margin-bottom:0.35em;
-	color:$headline-color;
-	//letter-spacing:0.25em;
-	text-transform:uppercase;
-	@include font-nov(bold);
-}
-
-h1 {font-size:4em;}
-h2 {font-size:3em;}
-h3 {font-size:2.5em;}
-h4 {font-size:2em;}
-h5 {font-size:1.5em;}
-
-
-
-
-/* Main Body Styles
-======================================================= */
-body {
-	font-size:62.5%;
-	color:$body-copy-color;
-	@include font-pn(regular);
-}
-
-
-/* Nav Styles
-======================================================= */
-nav {
+/* Nav - Back Btn
+================================================================================================= */
+body#hireme nav {
+	position:fixed;
+	top: 18px;
+	left: 18px;
 	a {
 		text-decoration: none;
 		color:$headline-color;
-	}
-	body#hireme & {
-		position:fixed;
-		top: 18px;
-		left: 18px;
-		a {
-			font-size:30px;
-			$padding:10px;
-			padding: ($padding * 1.5) $padding;
-			float: left;
-			&:hover {
-				background-color:$resume-color-1;
-				color:$grey;
-			}
+		font-size:30px;
+		$padding:10px;
+		padding: ($padding * 1.5) $padding;
+		float: left;
+		&:hover {
+			background-color:$resume-color-1;
+			color:$grey;
 		}
-		@include responsive(tablet) {left:10px;}
-		@include responsive(portrait-tablet) {display:none;}
 	}
+	@include responsive(tablet) {left:10px;}
+	@include responsive(portrait-tablet) {display:none;}
 }
 
 
 
-/* Home Page
-======================================================= */
-@import "_homepage.scss";
+/* Main Styles
+================================================================================================= */
 
-
-
-
-/* Resume Page
-======================================================= */
 body#hireme {
 	background:#eee;
 	.content-wrapper {
@@ -247,80 +202,4 @@ body#hireme {
 		}
 		@include responsive(portrait-tablet) {padding-right:0;}
 	}
-}
-
-
-
-
-
-
-
-
-/* Footer
-======================================================= */
-footer {
-	width:100%;
-	padding:15px 0;
-	background:#333;
-	background:rgb(57,57,57);
-	color:#ccc;
-	text-align:center;
-	font-size:0.85em;
-	letter-spacing:0.2em;
-	text-transform:uppercase;
-}
-
-
-
-
-/* Extras
-======================================================= */
-
-// Scroll to Top
-.go-top {
-	display: none;
-	position: fixed;
-	bottom: 2em;
-	right: 2em;
-	padding: 1em 1em 0.75em 1em;
-	background-color: rgba(158,178,192,0.4);
-
-	font-size: 12px;
-	color: white;
-	text-decoration: none;
-}
-
-
-
-
-
-// FIrst & Last Overrides
-.first {margin-left:0 !important;}
-.last {margin-right:0 !important;}
-
-.clearfix:after {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-     }
-.clearfix { display: inline-block; }
-/* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
-/* close commented backslash hack */
-
-
-/* Selection Colors
-======================================================= */
-::selection {
-	background:$highlight-bkgd-color;
-	color:$highlight-color;
-}
-
-::-moz-selection {
-	background:$highlight-bkgd-color;
-	color:$highlight-color;
 }

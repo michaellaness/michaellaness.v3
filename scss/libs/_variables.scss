@@ -19,22 +19,6 @@ $highlight-bkgd-color:$red;
 $resume-color-1:$red;
 
 
-@mixin word-color($color) {
-	color:darken($color, 20%);
-	&:hover {
-		color:$color;
-		background-color:lighten($color, 25%);
-	}
-	&:after {background:darken($color, 20%);}
-	@include responsive(tablet) {
-		&:hover {
-			color:darken($color, 20%);
-			background:$color;
-		}
-	}
-}
-
-
 
 
 

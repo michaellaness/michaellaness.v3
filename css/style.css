@@ -126,39 +126,12 @@ body {
   font-weight: 300;
 }
 
-/* Nav Styles
-======================================================= */
-nav a {
-  text-decoration: none;
-  color: #444444;
-}
-body#hireme nav {
-  position: fixed;
-  top: 18px;
-  left: 18px;
-}
-body#hireme nav a {
-  font-size: 30px;
-  padding: 15px 10px;
-  float: left;
-}
-body#hireme nav a:hover {
-  background-color: tomato;
-  color: #f3f2f2;
-}
-@media all and (max-width: 1024px) {
-  body#hireme nav {
-    left: 10px;
-  }
-}
-@media all and (max-width: 768px) {
-  body#hireme nav {
-    display: none;
-  }
-}
-
 /* Home Page
 ======================================================= */
+/* Variables
+================================================================================================= */
+/* Main Styles
+================================================================================================= */
 body#home {
   padding: 15px;
   line-height: 2px;
@@ -527,6 +500,37 @@ body#home li svg.me.me {
 
 /* Resume Page
 ======================================================= */
+/* Nav - Back Btn
+================================================================================================= */
+body#hireme nav {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+}
+body#hireme nav a {
+  text-decoration: none;
+  color: #444444;
+  font-size: 30px;
+  padding: 15px 10px;
+  float: left;
+}
+body#hireme nav a:hover {
+  background-color: tomato;
+  color: #f3f2f2;
+}
+@media all and (max-width: 1024px) {
+  body#hireme nav {
+    left: 10px;
+  }
+}
+@media all and (max-width: 768px) {
+  body#hireme nav {
+    display: none;
+  }
+}
+
+/* Main Styles
+================================================================================================= */
 body#hireme {
   background: #eee;
 }
