@@ -183,7 +183,7 @@ body#home {
 					font-size:21px;
 					right:20px;
 					left:20px;
-					bottom:50px;
+					bottom:30px;
 					margin: 0;
 					display: block;
 					opacity: 1;
@@ -194,9 +194,9 @@ body#home {
 					p {right:20px;}
 				}
 			}
-			//@include responsive(portrait-tablet) {
-			//	p {bottom:}
-			//}
+			@include responsive(portrait-tablet) {
+				p {bottom: 50px;}
+			}
 		}
 
 		// ====================== Work ====================== //

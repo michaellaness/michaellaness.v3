@@ -341,7 +341,7 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
     font-size: 21px;
     right: 20px;
     left: 20px;
-    bottom: 50px;
+    bottom: 30px;
     margin: 0;
     display: block;
     opacity: 1;
@@ -352,6 +352,11 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   }
   body#home li#me-item:hover p {
     right: 20px;
+  }
+}
+@media all and (max-width: 768px) {
+  body#home li#me-item p {
+    bottom: 50px;
   }
 }
 body#home li#work-item:hover, body#home li#work-item.active {
