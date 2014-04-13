@@ -1,4 +1,4 @@
-<svg class="work" x="0px" y="0px" width="494.255px" height="115.919px" viewBox="0 0 494.255 115.919" enable-background="new 0 0 494.255 115.919">
+<svg class="work" viewBox="0 0 494.255 115.919" enable-background="new 0 0 494.255 115.919">
 <g>
 	<path class="letter-w" d="M96.6,113.904L76.944,36.959l-19.488,76.944H32.088L0,1.848h26.712l19.656,80.976L67.704,1.848h18.648l21.168,80.976
 		l19.656-80.976h26.712l-31.92,112.056H96.6z"/>

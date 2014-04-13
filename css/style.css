@@ -163,6 +163,7 @@ body#home a {
 body#home li {
   position: relative;
   width: 94%;
+  padding: 0 3%;
   margin: auto;
   list-style: none;
   -webkit-transition: all 333ms ease-in-out;
@@ -172,23 +173,67 @@ body#home li:first-child:hover p {
   opacity: 1;
   margin-left: 2%;
 }
-body#home li:first-child, body#home li:nth-child(2), body#home li:nth-child(3) {
-  padding: 30px 40px;
+body#home li span {
+  text-align: right;
+  float: right;
+  margin-top: 25px;
+  margin-right: -15px;
+  -webkit-transition: all 333ms ease-in-out;
+  transition: all 333ms ease-in-out;
 }
-body#home li p {
+body#home li span a {
+  display: block;
+  opacity: 0;
+  font-size: 30px;
+  line-height: 1;
+  margin-bottom: 10px;
+  font-family: "skolar",serif;
+  font-style: normal;
+  font-weight: 400;
+}
+body#home li span a.behance, body#home li span a.linkedin {
+  color: #1aa093;
+}
+body#home li span a.behance:hover, body#home li span a.linkedin:hover {
+  color: turquoise;
+  background-color: #aef2eb;
+}
+body#home li span a.blog, body#home li span a.codepen, body#home li span a.tumblr, body#home li span a.twitter, body#home li span a.instagram {
+  color: #dbab01;
+}
+body#home li span a.blog:hover, body#home li span a.codepen:hover, body#home li span a.tumblr:hover, body#home li span a.twitter:hover, body#home li span a.instagram:hover {
+  color: #fed544;
+  background-color: #fff1c3;
+}
+body#home li:hover span, body#home li.active span {
+  opacity: 1;
+  margin-right: 0;
+}
+body#home li:hover span a, body#home li.active span a {
+  opacity: 1;
+}
+@media all and (max-width: 1024px) {
+  body#home li span a {
+    opacity: 1;
+  }
+}
+body#home li#me-item p {
+  text-align: right;
+  float: right;
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
   color: #c61e00;
   font-size: 22px;
   opacity: 0;
   letter-spacing: .02em;
-  position: relative;
-  display: inline-block;
   line-height: 1.2;
   font-family: 'proxima_novalight_italic';
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
 @media all and (max-width: 1024px) {
-  body#home li p {
+  body#home li#me-item p {
     margin: 0;
     display: block;
     margin-top: 27px;
@@ -258,6 +303,10 @@ body#home li#me-item .me-btns a:hover span {
 body#home li#me-item:hover, body#home li#me-item.active {
   background-color: tomato;
 }
+body#home li#me-item:hover p, body#home li#me-item.active p {
+  opacity: 1;
+  right: 15px;
+}
 body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   opacity: 1;
 }
@@ -265,32 +314,24 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   body#home li#me-item {
     background-color: tomato;
   }
+  body#home li#me-item p {
+    opacity: 1;
+    right: 15px;
+  }
   body#home li#me-item .me-btns {
     opacity: 1;
   }
 }
-body#home li#work-item span {
-  margin-left: 0%;
-}
 body#home li#work-item:hover, body#home li#work-item.active {
   background-color: turquoise;
-}
-body#home li#work-item:hover span, body#home li#work-item.active span {
-  margin-left: 2.5%;
 }
 @media all and (max-width: 1024px) {
   body#home li#work-item {
     background-color: turquoise;
   }
 }
-body#home li#play-item span {
-  margin-left: -2%;
-}
 body#home li#play-item:hover, body#home li#play-item.active {
   background-color: #fed544;
-}
-body#home li#play-item:hover span, body#home li#play-item.active span {
-  margin-left: 0;
 }
 @media all and (max-width: 1024px) {
   body#home li#play-item {
@@ -301,67 +342,18 @@ body#home li svg.work,
 body#home li svg.play,
 body#home li svg.me {
   fill: #f3f2f2;
-  height: 0%;
+  margin-top: 15px;
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
 body#home li svg.work {
-  width: 64%;
+  width: 54%;
 }
 body#home li svg.play {
-  width: 49%;
+  width: 44.5%;
 }
 body#home li svg.me {
-  width: 27%;
-}
-body#home li span {
-  position: absolute;
-  bottom: 35px;
-  text-align: right;
-  -webkit-transition: all 333ms ease-in-out;
-  transition: all 333ms ease-in-out;
-}
-body#home li span a {
-  opacity: 0;
-  font-size: 30px;
-  display: block;
-  line-height: 1.2;
-  width: 100%;
-  float: right;
-  font-family: "skolar",serif;
-  font-style: normal;
-  font-weight: 400;
-}
-body#home li span a.behance, body#home li span a.linkedin {
-  color: #1aa093;
-}
-body#home li span a.behance:hover, body#home li span a.linkedin:hover {
-  color: turquoise;
-  background-color: #aef2eb;
-}
-body#home li span a.blog, body#home li span a.codepen, body#home li span a.tumblr, body#home li span a.twitter, body#home li span a.instagram {
-  color: #dbab01;
-}
-body#home li span a.blog:hover, body#home li span a.codepen:hover, body#home li span a.tumblr:hover, body#home li span a.twitter:hover, body#home li span a.instagram:hover {
-  color: #fed544;
-  background-color: #fff1c3;
-}
-body#home li:hover span, body#home li.active span {
-  opacity: 1;
-}
-body#home li:hover span a, body#home li.active span a {
-  opacity: 1;
-}
-@media all and (max-width: 1024px) {
-  body#home li {
-    width: 85%;
-  }
-  body#home li span {
-    margin-left: 30px;
-  }
-  body#home li span a {
-    opacity: 1;
-  }
+  width: 23.5%;
 }
 
 /* Resume Page

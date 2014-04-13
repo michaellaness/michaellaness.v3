@@ -1,5 +1,4 @@
-<svg  class="me" x="0px" y="0px"
-	 width="223.272px" height="112.056px" viewBox="0 0 223.272 112.056" enable-background="new 0 0 223.272 112.056">
+<svg  class="me" viewBox="0 0 223.272 112.056" enable-background="new 0 0 223.272 112.056">
 <g>
 	<path class="icon" d="M97.586,112.139V31.21l-31.632,80.929H55.523L23.892,31.21v80.929H0V-0.085h33.482l27.257,70.161L87.995-0.085h33.65
 		v112.224H97.586z"/>
