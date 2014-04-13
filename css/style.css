@@ -186,7 +186,8 @@ body#home li span a {
   opacity: 0;
   font-size: 30px;
   line-height: 1;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+  padding: 5px;
   font-family: "skolar",serif;
   font-style: normal;
   font-weight: 400;

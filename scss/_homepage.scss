@@ -39,7 +39,8 @@ body#home {
 				opacity: 0;
 				font-size: 30px;
 				line-height: 1;
-				margin-bottom: 10px;
+				margin-bottom: 3px;
+				padding:5px;
 				@include font-skol;
 				// Work Icons
 				&.behance,
