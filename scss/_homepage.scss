@@ -132,7 +132,7 @@ body#home {
 						min-width:60px;
 						position:absolute;
 						bottom:-30px;
-						left:-8px;
+						left:-7px;
 						padding:12px 0;
 						background:$yellow;
 						color:$red;
@@ -151,7 +151,7 @@ body#home {
 							height: 0;
 							position:absolute;
 							top:-5px;
-							left:26px;
+							left:25px;
 							border-left: 5px solid transparent;
 							border-right: 5px solid transparent;
 							border-bottom: 5px solid $yellow;
@@ -160,15 +160,15 @@ body#home {
 					&.icon-mail {
 						font-size: ($icon-size + 2px);
 						span {
-							left:-5px;
-							&:before {left:43%;}
+							left:-3px;
+							&:before {left:42%;}
 						}
 					}
 					&:hover {
 						color:$grey;
 						span {
 							opacity: 1;
-							bottom:-38px;
+							bottom:-35px;
 						}
 					}
 				}
