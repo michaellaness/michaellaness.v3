@@ -236,6 +236,7 @@ body#home li#me-item p {
     display: block;
     margin-top: 27px;
     opacity: 1;
+    text-align: left;
   }
 }
 body#home li#me-item .me-btns {
@@ -344,14 +345,37 @@ body#home li svg.me {
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }
-body#home li svg.work {
+body#home li svg.work.work,
+body#home li svg.play.work,
+body#home li svg.me.work {
   width: 54%;
 }
-body#home li svg.play {
+body#home li svg.work.play,
+body#home li svg.play.play,
+body#home li svg.me.play {
   width: 44.5%;
 }
-body#home li svg.me {
+body#home li svg.work.me,
+body#home li svg.play.me,
+body#home li svg.me.me {
   width: 23.5%;
+}
+@media all and (max-width: 1024px) {
+  body#home li svg.work.work,
+  body#home li svg.play.work,
+  body#home li svg.me.work {
+    width: 79.5%;
+  }
+  body#home li svg.work.play,
+  body#home li svg.play.play,
+  body#home li svg.me.play {
+    width: 70%;
+  }
+  body#home li svg.work.me,
+  body#home li svg.play.me,
+  body#home li svg.me.me {
+    width: 45%;
+  }
 }
 
 /* Resume Page

@@ -87,6 +87,7 @@ body#home {
 					display: block;
 					margin-top: 27px;
 					opacity: 1;
+					text-align: left;
 				}
 			}
 			.me-btns {
@@ -185,13 +186,16 @@ body#home {
 			fill:$grey;
 			margin-top:15px;
 			@include ease;
+			$word-width:44.5%;
+			&.work {width:$word-width + 9.5%;}
+			&.play {width:$word-width;}
+			&.me {width:$word-width - 21%;}
+			@include responsive(tablet) {
+			$word-width:70%;
+				&.work {width:$word-width + 9.5%;}
+				&.play {width:$word-width;}
+				&.me {width:$word-width - 25%;}
+			}
 		}
-
-		$word-width:44.5%;
-		svg.work {width:$word-width + 9.5%;}
-		// Play Letters
-		svg.play {width:$word-width;}
-		// Me Letters
-		svg.me {width:$word-width - 21%;}
 	}
 }
