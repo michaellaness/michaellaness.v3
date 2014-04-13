@@ -35,6 +35,7 @@ body#home {
 				margin-left:8px;
 				padding:5px;
 				@include font-skol;
+
 				// Work Icons
 				&.behance,
 				&.linkedin {@include word-color($turq);}
@@ -52,14 +53,10 @@ body#home {
 			span {
 				opacity:1;
 				right:25px;
-				a {
-					opacity: 1;
-					&:hover {}
-				}
+				a {opacity: 1;}
 			}
 		}
 		@include responsive(tablet) {
-			//width:85%;
 			span {
 				top:auto;
 				bottom:20px;
@@ -72,7 +69,6 @@ body#home {
 					float:none;
 					position: relative;
 					font-size:26px;
-					//text-decoration: underline;
 					&:after {
 						position:absolute;
 						bottom:-1px;
@@ -80,13 +76,10 @@ body#home {
 						right:5px;
 						content:'';
 						height:2px;
-						//background:blue;
 					}
 				}
 			}
-			&:hover {
-				span {right:20px;}
-			}
+			&:hover {span {right:20px;}}
 		}
 		@include responsive(portrait-tablet) {
 			span {bottom:30px;}
@@ -98,15 +91,14 @@ body#home {
 				text-align: right;
 				float:right;
 				position:absolute;
-				bottom:40px;//35px;
+				bottom:40px;
 				right:0px;
 				color:darken($red, 25%);
-				font-size: 24px;//22px;
+				font-size: 24px;
 				opacity: 0;
 				letter-spacing: .02em;
 				line-height: 1.2;
 				@include font-skol(400, italic);
-				//@include font-pn(light-italic);
 				@include ease;
 			}
 			.me-btns {
@@ -118,7 +110,7 @@ body#home {
 				@include ease;
 				a {
 					font-size: $icon-size - 2px;
-					color:darken($red, 20%);//$grey;
+					color:darken($red, 20%);
 					margin-left: 2px;
 					position: relative;
 					span {
@@ -127,7 +119,7 @@ body#home {
 						bottom:-30px;
 						left:-8px;
 						padding:15px 0;
-						background:$yellow;//darken($red, 16%);
+						background:$yellow;
 						color:$red;
 						text-align: center;
 						font-size: 11px;
@@ -157,7 +149,7 @@ body#home {
 						}
 					}
 					&:hover {
-						color:$grey;//$yellow;
+						color:$grey;
 						span {
 							opacity: 1;
 							bottom:-38px;
@@ -192,11 +184,7 @@ body#home {
 				}
 				.me-btns {
 					opacity:1;
-					a {
-						&:hover {
-							span {display:none;}
-						}
-					}
+					a:hover {span {display:none;}}
 				}
 				&:hover {
 					p {right:20px;}
@@ -243,16 +231,12 @@ body#home {
 				$word-width:100%;
 				height:100px !important;
 				margin-top:30px;
-				&.work {width:$word-width};// + 9.5%;}
+				&.work {width:$word-width};
 				&.play {width:$word-width;}
-				&.me {width:$word-width };//- 25%;}
+				&.me {width:$word-width };
 			}
-			@include responsive(portrait-tablet) {
-				margin-top:75px;
-			}
-			@include responsive(small-tablet) {
-				margin-top:50px;
-			}
+			@include responsive(portrait-tablet) {margin-top:75px;}
+			@include responsive(small-tablet) {margin-top:50px;}
 		}
 	}
 }
