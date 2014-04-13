@@ -260,6 +260,21 @@ body#home li:hover span a, body#home li.active span a {
     bottom: 30px;
   }
 }
+@media all and (max-width: 450px) {
+  body#home li span {
+    left: 10px;
+    bottom: 15px;
+  }
+  body#home li span a {
+    float: left;
+    margin-left: 0;
+    font-size: 18px;
+  }
+  body#home li span a:after {
+    height: 1px;
+    bottom: 0;
+  }
+}
 body#home li#me-item p {
   text-align: right;
   float: right;
@@ -386,6 +401,15 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
     right: 15px;
   }
 }
+@media all and (max-width: 450px) {
+  body#home li#me-item p {
+    left: 15px;
+    bottom: 20px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.3;
+  }
+}
 body#home li#work-item:hover, body#home li#work-item.active {
   background-color: turquoise;
 }
@@ -460,6 +484,29 @@ body#home li svg.me.me {
   body#home li svg.play,
   body#home li svg.me {
     margin-top: 50px;
+  }
+}
+@media all and (max-width: 450px) {
+  body#home li svg.work,
+  body#home li svg.play,
+  body#home li svg.me {
+    margin-top: -15px;
+    margin-left: 5px;
+  }
+  body#home li svg.work.work,
+  body#home li svg.play.work,
+  body#home li svg.me.work {
+    width: 54%;
+  }
+  body#home li svg.work.play,
+  body#home li svg.play.play,
+  body#home li svg.me.play {
+    width: 44.5%;
+  }
+  body#home li svg.work.me,
+  body#home li svg.play.me,
+  body#home li svg.me.me {
+    width: 23.5%;
   }
 }
 

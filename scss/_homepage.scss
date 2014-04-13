@@ -84,6 +84,21 @@ body#home {
 		@include responsive(portrait-tablet) {
 			span {bottom:30px;}
 		}
+		@include responsive(phone) {
+			span {
+				left:10px;
+				bottom:15px;
+				a {
+					float:left;
+					margin-left:0;
+					font-size:18px;
+					&:after {
+						height:1px;
+						bottom:0;
+					}
+				}
+			}
+		}
 
 		// ====================== Me ====================== //
 		&#me-item {
@@ -200,6 +215,15 @@ body#home {
 					right:15px;
 				}
 			}
+			@include responsive(phone) {
+				p {
+					left:15px;
+					bottom:20px;
+					font-size: 16px;
+					text-align: left;
+					line-height: 1.3;
+				}
+			}
 		}
 
 		// ====================== Work ====================== //
@@ -237,6 +261,14 @@ body#home {
 			}
 			@include responsive(portrait-tablet) {margin-top:75px;}
 			@include responsive(small-tablet) {margin-top:50px;}
+			@include responsive(phone) {
+				margin-top:-15px;
+				margin-left:5px;
+				$word-width:44.5%;
+				&.work {width:$word-width + 9.5%;}
+				&.play {width:$word-width;}
+				&.me {width:$word-width - 21%;}
+			}
 		}
 	}
 }
