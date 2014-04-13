@@ -31,7 +31,8 @@ h5 {font-size:1.5em;}
 body {
 	font-size:62.5%;
 	color:$body-copy-color;
-	@include font-os(400);
+	//@include font-os(400);
+	@include font-pn(regular);
 }
 
 
@@ -147,7 +148,7 @@ body#hireme {
 					text-transform: none;
 					margin-bottom: 10px;
 					color:darken($resume-color-1, 10%);
-					@include font-os(300, italic);
+					@include font-pn(light-italic);
 				}
 				.meta {
 					position:absolute;

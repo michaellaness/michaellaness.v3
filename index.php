@@ -21,7 +21,6 @@
 			<a class="linkedin" href="http://linkedin.com/in/michaelladirkes/" target="_blank">linkedin</a>
 			</span>
 	</li>
-
 	<li id="play-item">
 		<?php include('words/play.php'); ?>
 		<span class="social">

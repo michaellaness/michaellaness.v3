@@ -87,7 +87,7 @@ body#home {
 		@include responsive(phone) {
 			span {
 				left:10px;
-				bottom:15px;
+				bottom:10px;
 				a {
 					float:left;
 					margin-left:0;
@@ -216,6 +216,10 @@ body#home {
 				}
 			}
 			@include responsive(phone) {
+				.me-btns {
+					top:11px;
+					a {margin-left:-5px;}
+				}
 				p {
 					left:15px;
 					bottom:20px;
@@ -262,7 +266,7 @@ body#home {
 			@include responsive(portrait-tablet) {margin-top:75px;}
 			@include responsive(small-tablet) {margin-top:50px;}
 			@include responsive(phone) {
-				margin-top:-15px;
+				margin-top:-19px;
 				margin-left:5px;
 				$word-width:44.5%;
 				&.work {width:$word-width + 9.5%;}

@@ -122,10 +122,7 @@ h5 {
 body {
   font-size: 62.5%;
   color: #444444;
-  font-family: 'Open Sans', helvetica, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.03em;
+  font-family: 'proxima_nova_rgregular';
 }
 
 /* Nav Styles
@@ -263,7 +260,7 @@ body#home li:hover span a, body#home li.active span a {
 @media all and (max-width: 450px) {
   body#home li span {
     left: 10px;
-    bottom: 15px;
+    bottom: 10px;
   }
   body#home li span a {
     float: left;
@@ -402,6 +399,12 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   }
 }
 @media all and (max-width: 450px) {
+  body#home li#me-item .me-btns {
+    top: 11px;
+  }
+  body#home li#me-item .me-btns a {
+    margin-left: -5px;
+  }
   body#home li#me-item p {
     left: 15px;
     bottom: 20px;
@@ -490,7 +493,7 @@ body#home li svg.me.me {
   body#home li svg.work,
   body#home li svg.play,
   body#home li svg.me {
-    margin-top: -15px;
+    margin-top: -19px;
     margin-left: 5px;
   }
   body#home li svg.work.work,
@@ -591,10 +594,7 @@ body#hireme section article header h2 {
   text-transform: none;
   margin-bottom: 10px;
   color: #ff3814;
-  font-family: 'Open Sans', helvetica, sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  letter-spacing: 0.03em;
+  font-family: 'proxima_novalight_italic';
 }
 body#hireme section article header .meta {
   position: absolute;

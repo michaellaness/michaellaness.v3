@@ -10,7 +10,7 @@
 
 <!-- Optimized mobile viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-  <meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 
 <!--	<link rel="shortcut icon" href="img/favicon.ico">
 	<link rel="apple-touch-icon" href="img/logo.40x40png">
@@ -18,27 +18,25 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/logo.128x128.png">	-->
 
 	<link href='fonts/fontello/css/fontello.css' rel="stylesheet" type='text/css'>
-	<link href='fonts/Proxima-Nova/stylesheet.css' rel="stylesheet" type='text/css'>
 	<link href='fonts/novecento/css.css' rel="stylesheet" type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300' rel='stylesheet' type='text/css'>
 
 	<!-- Typekit -->
-<script type="text/javascript" src="//use.typekit.net/was3rxf.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="//use.typekit.net/was3rxf.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 	<link href='css/style.css' rel='stylesheet' type='text/css'>
 
-<script type="text/javascript">
-	var $buoop = {};
-	$buoop.ol = window.onload;
-	window.onload=function(){
-	 try {if ($buoop.ol) $buoop.ol();}catch (e) {}
-	 var e = document.createElement("script");
-	 e.setAttribute("type", "text/javascript");
-	 e.setAttribute("src", "//browser-update.org/update.js");
-	 document.body.appendChild(e);
-	}
-</script>
+	<script type="text/javascript">
+		var $buoop = {};
+		$buoop.ol = window.onload;
+		window.onload=function(){
+		 try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+		 var e = document.createElement("script");
+		 e.setAttribute("type", "text/javascript");
+		 e.setAttribute("src", "//browser-update.org/update.js");
+		 document.body.appendChild(e);
+		}
+	</script>
 
 <!--[if lt IE 9]>
 	<script src="js/html5.js"></script>
