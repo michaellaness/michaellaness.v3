@@ -40,7 +40,7 @@
 				<div class="location">STEAMBOAT SPRINGS, CO</div>
 			</div>
 		</header>
-		<div class="content">Responsibilities included: web strategy, front-end Wordpress development, responsive web design, designing & building HTML emails, various web content creation, Quality Assurance.</div>
+		<div class="content">Responsibilities included: web strategy, front-end Wordpress development, responsive web design, designing & building HTML emails, various web content creation, quality assurance.</div>
 	</article>
 
 	<article>
