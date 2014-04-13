@@ -309,8 +309,8 @@ body#home li#me-item .me-btns a span {
   min-width: 60px;
   position: absolute;
   bottom: -30px;
-  left: -7px;
-  padding: 12px 0;
+  left: -6px;
+  padding: 11px 0 12px;
   background: #fed544;
   color: tomato;
   text-align: center;
@@ -330,7 +330,7 @@ body#home li#me-item .me-btns a span:before {
   height: 0;
   position: absolute;
   top: -5px;
-  left: 25px;
+  left: 24px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #fed544;
@@ -342,7 +342,7 @@ body#home li#me-item .me-btns a.icon-mail span {
   left: -3px;
 }
 body#home li#me-item .me-btns a.icon-mail span:before {
-  left: 42%;
+  left: 25px;
 }
 body#home li#me-item .me-btns a:hover {
   color: #f3f2f2;

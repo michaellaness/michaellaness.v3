@@ -132,8 +132,8 @@ body#home {
 						min-width:60px;
 						position:absolute;
 						bottom:-30px;
-						left:-7px;
-						padding:12px 0;
+						left:-6px;
+						padding:11px 0 12px;
 						background:$yellow;
 						color:$red;
 						text-align: center;
@@ -151,7 +151,7 @@ body#home {
 							height: 0;
 							position:absolute;
 							top:-5px;
-							left:25px;
+							left:24px;
 							border-left: 5px solid transparent;
 							border-right: 5px solid transparent;
 							border-bottom: 5px solid $yellow;
@@ -161,7 +161,7 @@ body#home {
 						font-size: ($icon-size + 2px);
 						span {
 							left:-3px;
-							&:before {left:42%;}
+							&:before {left:25px;}
 						}
 					}
 					&:hover {
