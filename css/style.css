@@ -196,12 +196,18 @@ body#home li > span a.behance:hover, body#home li > span a.linkedin:hover {
   color: turquoise;
   background-color: #aef2eb;
 }
+body#home li > span a.behance:after, body#home li > span a.linkedin:after {
+  background: #1aa093;
+}
 body#home li > span a.blog, body#home li > span a.codepen, body#home li > span a.tumblr, body#home li > span a.twitter, body#home li > span a.instagram {
   color: #dbab01;
 }
 body#home li > span a.blog:hover, body#home li > span a.codepen:hover, body#home li > span a.tumblr:hover, body#home li > span a.twitter:hover, body#home li > span a.instagram:hover {
   color: #fed544;
   background-color: #fff1c3;
+}
+body#home li > span a.blog:after, body#home li > span a.codepen:after, body#home li > span a.tumblr:after, body#home li > span a.twitter:after, body#home li > span a.instagram:after {
+  background: #dbab01;
 }
 body#home li:hover span, body#home li.active span {
   opacity: 1;
@@ -211,8 +217,29 @@ body#home li:hover span a, body#home li.active span a {
   opacity: 1;
 }
 @media all and (max-width: 1024px) {
+  body#home li span {
+    top: auto;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
   body#home li span a {
     opacity: 1;
+    display: inline-block;
+    float: none;
+    position: relative;
+  }
+  body#home li span a:after {
+    position: absolute;
+    bottom: -1px;
+    left: 5px;
+    right: 5px;
+    content: '';
+    height: 2px;
+  }
+  body#home li:hover span {
+    right: 20px;
   }
 }
 body#home li#me-item p {
@@ -229,15 +256,6 @@ body#home li#me-item p {
   font-family: 'proxima_novalight_italic';
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
-}
-@media all and (max-width: 1024px) {
-  body#home li#me-item p {
-    margin: 0;
-    display: block;
-    margin-top: 27px;
-    opacity: 1;
-    text-align: left;
-  }
 }
 body#home li#me-item .me-btns {
   z-index: 9999;
@@ -315,10 +333,20 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   }
   body#home li#me-item p {
     opacity: 1;
-    right: 15px;
+    font-size: 21px;
+    right: 20px;
+    left: 20px;
+    bottom: 50px;
+    margin: 0;
+    display: block;
+    opacity: 1;
+    text-align: center;
   }
   body#home li#me-item .me-btns {
     opacity: 1;
+  }
+  body#home li#me-item:hover p {
+    right: 20px;
   }
 }
 body#home li#work-item:hover, body#home li#work-item.active {
@@ -361,20 +389,33 @@ body#home li svg.me.me {
   width: 23.5%;
 }
 @media all and (max-width: 1024px) {
+  body#home li svg.work,
+  body#home li svg.play,
+  body#home li svg.me {
+    height: 100px !important;
+    margin-top: 40px;
+  }
   body#home li svg.work.work,
   body#home li svg.play.work,
   body#home li svg.me.work {
-    width: 79.5%;
+    width: 100%;
   }
   body#home li svg.work.play,
   body#home li svg.play.play,
   body#home li svg.me.play {
-    width: 70%;
+    width: 100%;
   }
   body#home li svg.work.me,
   body#home li svg.play.me,
   body#home li svg.me.me {
-    width: 45%;
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  body#home li svg.work,
+  body#home li svg.play,
+  body#home li svg.me {
+    margin-top: 75px;
   }
 }
 

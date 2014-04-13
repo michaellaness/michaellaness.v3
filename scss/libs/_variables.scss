@@ -25,6 +25,7 @@ $resume-color-1:$red;//#ff33cc;
 		color:$color;
 		background-color:lighten($color, 25%);
 	}
+	&:after {background:darken($color, 20%);}
 }
 
 

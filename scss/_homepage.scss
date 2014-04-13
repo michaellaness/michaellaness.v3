@@ -61,7 +61,30 @@ body#home {
 		@include responsive(tablet) {
 			//width:85%;
 			span {
-				a {opacity:1;}
+				top:auto;
+				bottom:40px;
+				left:20px;
+				right:20px;
+				text-align: center;
+				a {
+					opacity:1;
+					display: inline-block;
+					float:none;
+					position: relative;
+					//text-decoration: underline;
+					&:after {
+						position:absolute;
+						bottom:-1px;
+						left:5px;
+						right:5px;
+						content:'';
+						height:2px;
+						//background:blue;
+					}
+				}
+			}
+			&:hover {
+				span {right:20px;}
 			}
 		}
 
@@ -81,14 +104,6 @@ body#home {
 				//@include font-skol(400, italic);
 				@include font-pn(light-italic);
 				@include ease;
-				// Responsive
-				@include responsive(tablet) {
-					margin: 0;
-					display: block;
-					margin-top: 27px;
-					opacity: 1;
-					text-align: left;
-				}
 			}
 			.me-btns {
 				z-index:9999;
@@ -146,6 +161,8 @@ body#home {
 					}
 				}
 			}
+
+			// =========== Hover & Active States =========== //
 			&:hover, &.active {
 				background-color:$red;
 				p {
@@ -154,15 +171,29 @@ body#home {
 				}
 				.me-btns {opacity:1;}
 			}
-			// Responsive
+
+			// =========== Responsive =========== //
 			@include responsive(tablet) {
 				background-color:$red;
 				p {
 					opacity:1;
-					right:15px;
+					font-size:21px;
+					right:20px;
+					left:20px;
+					bottom:50px;
+					margin: 0;
+					display: block;
+					opacity: 1;
+					text-align: center;
 				}
 				.me-btns {opacity:1;}
+				&:hover {
+					p {right:20px;}
+				}
 			}
+			//@include responsive(portrait-tablet) {
+			//	p {bottom:}
+			//}
 		}
 
 		// ====================== Work ====================== //
@@ -191,10 +222,15 @@ body#home {
 			&.play {width:$word-width;}
 			&.me {width:$word-width - 21%;}
 			@include responsive(tablet) {
-			$word-width:70%;
-				&.work {width:$word-width + 9.5%;}
+				$word-width:100%;
+				height:100px !important;
+				margin-top:40px;
+				&.work {width:$word-width};// + 9.5%;}
 				&.play {width:$word-width;}
-				&.me {width:$word-width - 25%;}
+				&.me {width:$word-width };//- 25%;}
+			}
+			@include responsive(portrait-tablet) {
+				margin-top:75px;
 			}
 		}
 	}
