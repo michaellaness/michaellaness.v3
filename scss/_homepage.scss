@@ -62,7 +62,7 @@ body#home {
 			//width:85%;
 			span {
 				top:auto;
-				bottom:40px;
+				bottom:20px;
 				left:20px;
 				right:20px;
 				text-align: center;
@@ -86,6 +86,9 @@ body#home {
 			&:hover {
 				span {right:20px;}
 			}
+		}
+		@include responsive(portrait-tablet) {
+			span {bottom:40px;}
 		}
 
 		// ====================== Me ====================== //
