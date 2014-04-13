@@ -252,14 +252,16 @@ body#home li#me-item p {
   text-align: right;
   float: right;
   position: absolute;
-  bottom: 35px;
+  bottom: 40px;
   right: 0px;
   color: #c61e00;
-  font-size: 22px;
+  font-size: 24px;
   opacity: 0;
   letter-spacing: .02em;
   line-height: 1.2;
-  font-family: 'proxima_novalight_italic';
+  font-family: "skolar",serif;
+  font-style: italic;
+  font-weight: 400;
   -webkit-transition: all 333ms ease-in-out;
   transition: all 333ms ease-in-out;
 }

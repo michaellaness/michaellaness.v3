@@ -98,15 +98,15 @@ body#home {
 				text-align: right;
 				float:right;
 				position:absolute;
-				bottom:35px;
+				bottom:40px;//35px;
 				right:0px;
 				color:darken($red, 25%);
-				font-size: 22px;
+				font-size: 24px;//22px;
 				opacity: 0;
 				letter-spacing: .02em;
 				line-height: 1.2;
-				//@include font-skol(400, italic);
-				@include font-pn(light-italic);
+				@include font-skol(400, italic);
+				//@include font-pn(light-italic);
 				@include ease;
 			}
 			.me-btns {
