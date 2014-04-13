@@ -56,6 +56,8 @@ nav {
 				color:$grey;
 			}
 		}
+		@include responsive(tablet) {left:10px;}
+		@include responsive(portrait-tablet) {display:none;}
 	}
 }
 
@@ -74,10 +76,16 @@ body#hireme {
 	background:#eee;
 	.content-wrapper {
 		width:60%;
+		min-width:780px;
+		max-width: 900px;
 		margin:20px auto 50px auto;
 		padding:30px 40px;
 		background:white;
 		border-top:10px solid $resume-color-1;
+		@include responsive(portrait-tablet) {
+			width:80%;
+			min-width: 100px;
+		}
 	}
 	section { // For Experience, Education and Skills
 		margin-bottom:50px;
@@ -100,6 +108,7 @@ body#hireme {
 				font-size:2.85em;
 				letter-spacing: 0.09em;
 				margin-top: 44px;
+				@include responsive(portrait-tablet) {margin-top:15px;}
 			}
 			h2 {
 				font-size:1.5em;
@@ -110,6 +119,10 @@ body#hireme {
 				font-size: 1.4em;
 				margin-top:20px;
 				line-height: 1.5em;
+			}
+			@include responsive(portrait-tablet) {
+				border:none;
+				padding-bottom:0;
 			}
 		}
 		h2.section-header {
@@ -127,6 +140,17 @@ body#hireme {
 			line-height: 1;
 			color:$resume-color-1;//lighten($headline-color,25%);
 			@include font-nov(demibold);
+			// Responsive
+			@include responsive(portrait-tablet) {
+				width:100%;
+				padding-right:0;
+				margin-right: 0;
+				margin-bottom: 15px;
+				padding-bottom:15px;
+				text-align: left;
+				border-right:none;
+				border-bottom:1px solid darken($grey,7%);
+			}
 		}
 		article { // For Individual Entries
 			margin-bottom: 30px;
@@ -166,6 +190,9 @@ body#hireme {
 				line-height: 1.5em;
 				color:#999;
 			}
+			@include responsive(portrait-tablet) {
+				width:100%;
+			}
 		}
 		ul.skill-list {
 			display: inline-block;
@@ -178,6 +205,10 @@ body#hireme {
 				font-size: 1.3em;
 				color:#999;
 				@include font-nov(medium);
+			}
+			@include responsive(portrait-tablet) {
+				//width:40%;
+				//margin-left:9%;
 			}
 		}
 		&#contact {
@@ -204,6 +235,7 @@ body#hireme {
 				}
 			}
 		}
+		@include responsive(portrait-tablet) {padding-right:0;}
 	}
 }
 
