@@ -26,6 +26,12 @@ $resume-color-1:$red;//#ff33cc;
 		background-color:lighten($color, 25%);
 	}
 	&:after {background:darken($color, 20%);}
+	@include responsive(tablet) {
+		&:hover {
+			color:darken($color, 20%);
+			background:$color;
+		}
+	}
 }
 
 
@@ -51,6 +57,9 @@ $resume-color-1:$red;//#ff33cc;
 	}
 	@else if $size == 'portrait-tablet' {
 		@media all and (max-width: 768px) {@content;}
+	}
+	@else if $size == 'small-tablet' {
+		@media all and (max-width: 600px) {@content;}
 	}
 	@else if $size == 'phone' {
 		@media all and (max-width: 450px) {@content;}

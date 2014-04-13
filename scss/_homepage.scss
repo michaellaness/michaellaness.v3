@@ -89,7 +89,7 @@ body#home {
 			}
 		}
 		@include responsive(portrait-tablet) {
-			span {bottom:40px;}
+			span {bottom:30px;}
 		}
 
 		// ====================== Me ====================== //
@@ -190,13 +190,27 @@ body#home {
 					opacity: 1;
 					text-align: center;
 				}
-				.me-btns {opacity:1;}
+				.me-btns {
+					opacity:1;
+					a {
+						&:hover {
+							span {display:none;}
+						}
+					}
+				}
 				&:hover {
 					p {right:20px;}
 				}
 			}
 			@include responsive(portrait-tablet) {
 				p {bottom: 50px;}
+			}
+			@include responsive(small-tablet) {
+				p {bottom: 30px;}
+				.me-btns {
+					top:15px;
+					right:15px;
+				}
 			}
 		}
 
@@ -235,6 +249,9 @@ body#home {
 			}
 			@include responsive(portrait-tablet) {
 				margin-top:75px;
+			}
+			@include responsive(small-tablet) {
+				margin-top:50px;
 			}
 		}
 	}

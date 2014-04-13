@@ -199,6 +199,12 @@ body#home li > span a.behance:hover, body#home li > span a.linkedin:hover {
 body#home li > span a.behance:after, body#home li > span a.linkedin:after {
   background: #1aa093;
 }
+@media all and (max-width: 1024px) {
+  body#home li > span a.behance:hover, body#home li > span a.linkedin:hover {
+    color: #1aa093;
+    background: turquoise;
+  }
+}
 body#home li > span a.blog, body#home li > span a.codepen, body#home li > span a.tumblr, body#home li > span a.twitter, body#home li > span a.instagram {
   color: #dbab01;
 }
@@ -208,6 +214,12 @@ body#home li > span a.blog:hover, body#home li > span a.codepen:hover, body#home
 }
 body#home li > span a.blog:after, body#home li > span a.codepen:after, body#home li > span a.tumblr:after, body#home li > span a.twitter:after, body#home li > span a.instagram:after {
   background: #dbab01;
+}
+@media all and (max-width: 1024px) {
+  body#home li > span a.blog:hover, body#home li > span a.codepen:hover, body#home li > span a.tumblr:hover, body#home li > span a.twitter:hover, body#home li > span a.instagram:hover {
+    color: #dbab01;
+    background: #fed544;
+  }
 }
 body#home li:hover span, body#home li.active span {
   opacity: 1;
@@ -245,7 +257,7 @@ body#home li:hover span a, body#home li.active span a {
 }
 @media all and (max-width: 768px) {
   body#home li span {
-    bottom: 40px;
+    bottom: 30px;
   }
 }
 body#home li#me-item p {
@@ -353,6 +365,9 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
   body#home li#me-item .me-btns {
     opacity: 1;
   }
+  body#home li#me-item .me-btns a:hover span {
+    display: none;
+  }
   body#home li#me-item:hover p {
     right: 20px;
   }
@@ -360,6 +375,15 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
 @media all and (max-width: 768px) {
   body#home li#me-item p {
     bottom: 50px;
+  }
+}
+@media all and (max-width: 600px) {
+  body#home li#me-item p {
+    bottom: 30px;
+  }
+  body#home li#me-item .me-btns {
+    top: 15px;
+    right: 15px;
   }
 }
 body#home li#work-item:hover, body#home li#work-item.active {
@@ -429,6 +453,13 @@ body#home li svg.me.me {
   body#home li svg.play,
   body#home li svg.me {
     margin-top: 75px;
+  }
+}
+@media all and (max-width: 600px) {
+  body#home li svg.work,
+  body#home li svg.play,
+  body#home li svg.me {
+    margin-top: 50px;
   }
 }
 
