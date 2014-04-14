@@ -71,9 +71,9 @@ body#hireme {
 				letter-spacing: 0.09em;
 			}
 			.content {
-				font-size: 1.4em;
+				font-size: 1.54em;
 				margin-top:20px;
-				line-height: 1.5em;
+				line-height: 1.4em;
 			}
 			@include responsive(portrait-tablet) {
 				border:none;
@@ -147,6 +147,16 @@ body#hireme {
 			}
 			@include responsive(portrait-tablet) {
 				width:100%;
+				header {
+					.meta {
+						position: relative;
+						text-align: left;
+						margin-bottom:15px;
+						font-size:1em;
+						div {display:inline-block;}
+						.date:after {content:' //';}
+					}
+				}
 			}
 		}
 		ul.skill-list {

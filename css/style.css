@@ -586,9 +586,9 @@ body#hireme section#intro h2 {
   letter-spacing: 0.09em;
 }
 body#hireme section#intro .content {
-  font-size: 1.4em;
+  font-size: 1.54em;
   margin-top: 20px;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 @media all and (max-width: 768px) {
   body#hireme section#intro {
@@ -668,6 +668,18 @@ body#hireme section article .content {
 @media all and (max-width: 768px) {
   body#hireme section article {
     width: 100%;
+  }
+  body#hireme section article header .meta {
+    position: relative;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 1em;
+  }
+  body#hireme section article header .meta div {
+    display: inline-block;
+  }
+  body#hireme section article header .meta .date:after {
+    content: ' //';
   }
 }
 body#hireme section ul.skill-list {
