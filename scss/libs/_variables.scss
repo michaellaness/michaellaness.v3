@@ -42,6 +42,9 @@ $resume-color-1:$red;
 	@else if $size == 'portrait-tablet' {
 		@media all and (max-width: 768px) {@content;}
 	}
+	@else if $size == 'mid-tablet' {
+		@media all and (max-width: 1023px) {@content;}
+	}
 	@else if $size == 'small-tablet' {
 		@media all and (max-width: 600px) {@content;}
 	}

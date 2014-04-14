@@ -18,8 +18,9 @@ body#hireme nav {
 			color:$grey;
 		}
 	}
+	// Responsive
 	@include responsive(tablet) {left:10px;}
-	@include responsive(portrait-tablet) {display:none;}
+	@include responsive(mid-tablet) {display:none;}
 }
 
 
@@ -37,9 +38,16 @@ body#hireme {
 		padding:30px 40px;
 		background:white;
 		border-top:10px solid $resume-color-1;
-		@include responsive(portrait-tablet) {
+		// Responsive
+		@include responsive(tablet) {
 			width:80%;
-			min-width: 100px;
+			min-width: 0;
+		}
+		@include responsive(small-tablet) {
+			width:90%;
+			padding-right:5%;
+			padding-left:5%;
+			margin:0;
 		}
 	}
 	section { // For Experience, Education and Skills
@@ -58,12 +66,16 @@ body#hireme {
 				width:200px;
 				float:left;
 				margin-right: 30px;
+				// Responsive
+				//@include responsive(mid-tablet) {width:220px;}
+				@include responsive(small-tablet) {display:none;}
 			}
 			h1 {
 				font-size:2.85em;
 				letter-spacing: 0.09em;
 				margin-top: 44px;
-				@include responsive(portrait-tablet) {margin-top:15px;}
+				// Responsive
+				@include responsive(mid-tablet) {margin-top:15px;}
 			}
 			h2 {
 				font-size:1.5em;
@@ -75,7 +87,8 @@ body#hireme {
 				margin-top:20px;
 				line-height: 1.4em;
 			}
-			@include responsive(portrait-tablet) {
+			// Responsive
+			@include responsive(mid-tablet) {
 				border:none;
 				padding-bottom:0;
 			}
@@ -93,10 +106,10 @@ body#hireme {
 			font-size: 1.8em;
 			text-align:right;
 			line-height: 1;
-			color:$resume-color-1;//lighten($headline-color,25%);
+			color:$resume-color-1;
 			@include font-nov(demibold);
 			// Responsive
-			@include responsive(portrait-tablet) {
+			@include responsive(mid-tablet) {
 				width:100%;
 				padding-right:0;
 				margin-right: 0;
@@ -144,11 +157,13 @@ body#hireme {
 				width:70%;
 				line-height: 1.5em;
 				color:#999;
-				@include responsive(portrait-tablet) {
+				// Responsive
+				@include responsive(mid-tablet) {
 					width:100%;
 				}
 			}
-			@include responsive(portrait-tablet) {
+			// Responsive
+			@include responsive(mid-tablet) {
 				width:100%;
 				header {
 					.meta {
@@ -176,14 +191,15 @@ body#hireme {
 				color:#999;
 				@include font-nov(medium);
 			}
-			@include responsive(portrait-tablet) {
+			// Responsive
+			@include responsive(mid-tablet) {
 				li {
 					width:auto;
 					float: left;
 					display: inline-block;
 					margin-bottom: 10px;
 					margin-right:10px;
-					font-size: 1.3em;
+					font-size: 1em;
 					background:$grey;
 					padding:10px;
 				}
@@ -210,9 +226,15 @@ body#hireme {
 					&:first-child {text-align:left;}
 					&:last-child {text-align:right;}
 					&:hover {a {border-color:$resume-color-1;}}
+					@include responsive(small-tablet) {
+						width:100%;
+						text-align: center !important;
+						margin-bottom:10px;
+					}
 				}
 			}
 		}
-		@include responsive(portrait-tablet) {padding-right:0;}
+		// Responsive
+		@include responsive(mid-tablet) {padding-right:0;}
 	}
 }
