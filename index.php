@@ -17,18 +17,19 @@
 	<li id="work-item">
 		<?php include('words/work.php'); ?>
 		<span class="social">
-			<a class="behance" href="http://behance.net/_michaella" target="_blank">behance</a>
 			<a class="linkedin" href="http://linkedin.com/in/michaelladirkes/" target="_blank">linkedin</a>
+			<a class="github" href="http://github.com/michaellaness" target="_blank">github</a>
+			<a class="behance" href="http://behance.net/_michaella" target="_blank">behance</a>
 			</span>
 	</li>
 	<li id="play-item">
 		<?php include('words/play.php'); ?>
 		<span class="social">
-			<a class="blog" href="http://blog.michaellaness.com">wordpress</a>
-			<a class="twitter" href="http://twitter.com/_michaella" target="_blank">twitter</a>
+			<a class="tumblr" href="http://thatgirlmichaella.tumblr.com" target="_blank">tumblr</a>
 			<a class="instagram" href="http://instagram.com/michaellaness" target="_blank">instagram</a>
 			<a class="codepen" href="http://codepen.io/michaella" target="_blank">codepen</a>
-			<a class="tumblr" href="http://thatgirlmichaella.tumblr.com" target="_blank">tumblr</a>
+			<a class="twitter" href="http://twitter.com/_michaella" target="_blank">twitter</a>
+			<a class="blog" href="http://blog.michaellaness.com">wordpress</a>
 		</span>
 	</li>
 </ul>

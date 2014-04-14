@@ -170,18 +170,18 @@ body#home li > span a {
   font-style: normal;
   font-weight: 400;
 }
-body#home li > span a.behance, body#home li > span a.linkedin {
+body#home li > span a.behance, body#home li > span a.linkedin, body#home li > span a.github {
   color: #1aa093;
 }
-body#home li > span a.behance:hover, body#home li > span a.linkedin:hover {
+body#home li > span a.behance:hover, body#home li > span a.linkedin:hover, body#home li > span a.github:hover {
   color: turquoise;
   background-color: #aef2eb;
 }
-body#home li > span a.behance:after, body#home li > span a.linkedin:after {
+body#home li > span a.behance:after, body#home li > span a.linkedin:after, body#home li > span a.github:after {
   background: #1aa093;
 }
 @media all and (max-width: 1024px) {
-  body#home li > span a.behance:hover, body#home li > span a.linkedin:hover {
+  body#home li > span a.behance:hover, body#home li > span a.linkedin:hover, body#home li > span a.github:hover {
     color: #1aa093;
     background: turquoise;
   }

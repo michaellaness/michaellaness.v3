@@ -64,7 +64,8 @@ body#home {
 
 				// Work Icons
 				&.behance,
-				&.linkedin {@include word-color($turq);}
+				&.linkedin,
+				&.github {@include word-color($turq);}
 
 				// Play Icons
 				&.blog,
