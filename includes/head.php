@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Michaella Portfolio</title>
+	<title>Michaella Dirkes</title>
 	<meta charset="utf-8">
 	<meta name="description" content="I use design thinking to solve communication problems and create awesome visual experiences. I also write HTML + CSS so the web experiences I design are awesome too. BFA in Graphic Design with 3 years of experience—currently looking to join a strong team." />
 	<meta name="author" content="Michaella Dirkes">
