@@ -144,6 +144,9 @@ body#hireme {
 				width:70%;
 				line-height: 1.5em;
 				color:#999;
+				@include responsive(portrait-tablet) {
+					width:100%;
+				}
 			}
 			@include responsive(portrait-tablet) {
 				width:100%;

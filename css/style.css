@@ -666,6 +666,11 @@ body#hireme section article .content {
   color: #999;
 }
 @media all and (max-width: 768px) {
+  body#hireme section article .content {
+    width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
   body#hireme section article {
     width: 100%;
   }
