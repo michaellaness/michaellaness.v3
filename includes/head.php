@@ -3,7 +3,7 @@
 <head>
 	<title>Michaella Portfolio</title>
 	<meta charset="utf-8">
-	<meta name="description" content="I like to use design to solve problems, inspire, & connect people. Currently I’m available for freelance projects and also looking for long-term opportunities to work with an awesome creative team. Please contact me with any questions, new project inquiries, or random hellos." />
+	<meta name="description" content="I use design thinking to solve communication problems and create awesome visual experiences. I also write HTML + CSS so the web experiences I design are awesome too. BFA in Graphic Design with 3 years of experience—currently looking to join a strong team." />
 	<meta name="author" content="Michaella Dirkes">
 	<meta name="keywords" content="Michaella, Michaella Dirkes, michaella, michealla dirkes, mckayla, mikayla, michella, michela, michaela, diercks, dierks, dirkes, design, designer, graphic designer, developer, web, web developer, development, web development, interactive, interaction, interactive design, interaction design, interface, interface design, interface designer, user, user interface, user interface design, user interface designer, experience, user experience, user experience design, user experience designer, project, project management, technology, technologist, consultant, logo, branding, logo design, branding design, product, product design, denver, denver colorado, denver co, colorado, us, united states, wordpress, wordpress cms, cms, photoshop, illustrator, indesign, html, css, js, javascript, php, creative, creative suite, ios, ios dev, ios design, app, app design, app development" />
 
