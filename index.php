@@ -19,7 +19,7 @@
 		<span class="social">
 			<a class="linkedin" href="http://linkedin.com/in/michaelladirkes/" target="_blank">linkedin</a>
 			<a class="github" href="http://github.com/michaellaness" target="_blank">github</a>
-			<a class="behance" href="http://behance.net/_michaella" target="_blank">behance</a>
+			<a class="behance" href="http://behance.net/_michaella" target="_blank">portfolio</a>
 			</span>
 	</li>
 	<li id="play-item">
