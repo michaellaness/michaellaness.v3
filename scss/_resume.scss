@@ -21,6 +21,7 @@ body#hireme nav {
 	// Responsive
 	@include responsive(tablet) {left:10px;}
 	@include responsive(mid-tablet) {display:none;}
+	@media print {}
 }
 
 
