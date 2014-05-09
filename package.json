@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "name": "Michaellaness",
-=======
-  "name": "michaellaness",
->>>>>>> FETCH_HEAD
   "version": "3.0",
   "devDependencies": {
     "grunt": "^0.4.3",

@@ -110,6 +110,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');        // Localhost Environment
     grunt.loadNpmTasks('grunt-notify');
 
-    grunt.registerTask('default', ['imagemin']);
-    grunt.registerTask('dev', ['watch']);
+    grunt.registerTask('default', ['watch']);
+    //grunt.registerTask('dev', ['watch']);
 };

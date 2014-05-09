@@ -27,7 +27,7 @@
 				<div class="location">DENVER, CO</div>
 			</div>
 		</header>
-		<div class="content">Design  for web & branding, including identity systems, lots of responsive web design, copywriting, web content creation, and social media strategies for local companies and startups.</div>
+		<div class="content">Design  for web & branding systems, copywriting, web content creation, and social media strategies for companies including Cinearc, Blackdog Digital, Virginia Hill Home, and Recho Omondi Design.</div>
 	</article>
 
 
