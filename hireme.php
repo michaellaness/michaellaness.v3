@@ -20,6 +20,18 @@
 
 	<article>
 		<header>
+			<h1>HappyGov: Hack4Colorado</h1>
+			<h2>UX/UI Designer + Strategist</h2>
+			<div class="meta">
+				<div class="date">May 2014</div>
+				<div class="location">DENVER, CO</div>
+			</div>
+		</header>
+		<div class="content">We created HappyGov which is a platform that uses the 3-1-1 data set to display the status of service requests around Denver. The goal, promote good communication in order to build trust between citizens and their cities. Awarded 1st Place, Best use of ESRI API, and had a great weekend!</div>
+	</article>
+
+	<article>
+		<header>
 			<h1>Freelance</h1>
 			<h2>Freelance Everything Designer</h2>
 			<div class="meta">
@@ -45,7 +57,7 @@
 
 	<article>
 		<header>
-			<h1>hack4colorado</h1>
+			<h1>Tutorgrape: hack4colorado</h1>
 			<h2>UX/UI Design + Strategist</h2>
 			<div class="meta">
 				<div class="date">MAY 2013</div>

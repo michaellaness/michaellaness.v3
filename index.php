@@ -8,7 +8,7 @@
 <ul>
 	<li id="me-item">
 		<?php include('words/me.php'); ?>
-		<p>Michaella, an interactive designer who likes to play in the mountains.</p>
+		<p>Michaella, a designer who likes to play in the mountains.</p>
 		<div class="me-btns">
 			<a class="icon-resume" href="/hireme.php"><span>Resume</span></a>
 			<a class="icon-mail" href="mailto:m@michaellaness.com"><span>Email</span></a>

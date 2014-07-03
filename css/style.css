@@ -262,7 +262,7 @@ body#home li#me-item p {
   position: absolute;
   bottom: 40px;
   right: 0px;
-  color: #c61e00;
+  color: #b30086;
   font-size: 24px;
   opacity: 0;
   letter-spacing: .02em;
@@ -284,7 +284,7 @@ body#home li#me-item .me-btns {
 }
 body#home li#me-item .me-btns a {
   font-size: 33px;
-  color: #e02200;
+  color: #cc0099;
   margin-left: 2px;
   position: relative;
 }
@@ -295,7 +295,7 @@ body#home li#me-item .me-btns a span {
   left: -6px;
   padding: 11px 0 12px;
   background: #fed544;
-  color: tomato;
+  color: #ff33cc;
   text-align: center;
   font-size: 10px;
   line-height: 0.3;
@@ -335,7 +335,7 @@ body#home li#me-item .me-btns a:hover span {
   bottom: -35px;
 }
 body#home li#me-item:hover, body#home li#me-item.active {
-  background-color: tomato;
+  background-color: #ff33cc;
 }
 body#home li#me-item:hover p, body#home li#me-item.active p {
   opacity: 1;
@@ -346,7 +346,7 @@ body#home li#me-item:hover .me-btns, body#home li#me-item.active .me-btns {
 }
 @media all and (max-width: 1024px) {
   body#home li#me-item {
-    background-color: tomato;
+    background-color: #ff33cc;
   }
   body#home li#me-item p {
     opacity: 1;
@@ -515,7 +515,7 @@ body#hireme nav a {
   float: left;
 }
 body#hireme nav a:hover {
-  background-color: tomato;
+  background-color: #ff33cc;
   color: #f3f2f2;
 }
 @media all and (max-width: 1024px) {
@@ -541,7 +541,7 @@ body#hireme .content-wrapper {
   margin: 20px auto 50px auto;
   padding: 30px 40px;
   background: white;
-  border-top: 10px solid tomato;
+  border-top: 10px solid #ff33cc;
 }
 @media all and (max-width: 1024px) {
   body#hireme .content-wrapper {
@@ -619,7 +619,7 @@ body#hireme section h2.section-header {
   font-size: 1.8em;
   text-align: right;
   line-height: 1;
-  color: tomato;
+  color: #ff33cc;
   font-family: 'Novecentowide-DemiBold';
   letter-spacing: 0.09em;
 }
@@ -655,7 +655,7 @@ body#hireme section article header h2 {
   font-size: 1.5em;
   text-transform: none;
   margin-bottom: 10px;
-  color: #ff3814;
+  color: #ff00bf;
   font-family: 'proxima-nova';
   font-weight: 100;
   font-style: italic;
@@ -741,7 +741,7 @@ body#hireme section#contact ul.contact-list li {
 }
 body#hireme section#contact ul.contact-list li a {
   list-style: none;
-  color: tomato;
+  color: #ff33cc;
   border-bottom: 1px solid white;
   text-decoration: none;
   -webkit-transition: all 333ms ease-in-out;
@@ -754,7 +754,7 @@ body#hireme section#contact ul.contact-list li:last-child {
   text-align: right;
 }
 body#hireme section#contact ul.contact-list li:hover a {
-  border-color: tomato;
+  border-color: #ff33cc;
 }
 @media all and (max-width: 600px) {
   body#hireme section#contact ul.contact-list li {
@@ -831,15 +831,15 @@ footer {
 /* Selection Colors
 ======================================================= */
 ::-moz-selection {
-  background: tomato;
+  background: #ff33cc;
   color: white;
 }
 ::selection {
-  background: tomato;
+  background: #ff33cc;
   color: white;
 }
 
 ::-moz-selection {
-  background: tomato;
+  background: #ff33cc;
   color: white;
 }
